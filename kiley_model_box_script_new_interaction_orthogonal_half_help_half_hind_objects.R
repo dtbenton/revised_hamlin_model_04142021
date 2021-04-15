@@ -119,6 +119,7 @@ pretrain_people_6 = people_pretrain_stim[11:12,]  #Use this data frame for the p
 # PRETRAINING SET: OBJECTS
 pretrain_objects_1 = objects_pretrain_stim[1:4,] # no action 
 pretrain_objects_2 = objects_pretrain_stim[5:8,] # no action 
+
 names(pretrain_objects_1) = NULL
 rownames(pretrain_objects_1) = NULL
 names(pretrain_objects_2) = NULL

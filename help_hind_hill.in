@@ -1,43 +1,36 @@
-addNet box -i 3 
+addNet HamlinHill
 
 # input groups
-addGroup Slot_A 14 INPUT
-addGroup Slot_B 14 INPUT
-addGroup Eyes_1 2 INPUT
-addGroup Eyes_2 2 INPUT
-addGroup Motion_IN_1 5 INPUT
-addGroup Motion_IN_2 5 INPUT
+addGroup Slot_A 12 INPUT
+addGroup Slot_B 12 INPUT
+addGroup Motion_IN 3 INPUT
+addGroup Propel_IN 3 INPUT
+addGroup Interaction_IN 2 INPUT
 addGroup Mountain_IN 25 INPUT
 
-# context group
-addGroup context 14 ELMAN
-addGroup hidden 14
+
+# hidden group
+addGroup hidden 10
 
 # output group 
-addGroup Slot_A_OUT 14 OUTPUT
-addGroup Slot_B_OUT 14 OUTPUT
-addGroup Eyes_1_OUT 2 OUTPUT
-addGroup Eyes_2_OUT 2 OUTPUT
-
-addGroup Motion_OUT_1 5 OUTPUT
-addGroup Motion_OUT_2 5 OUTPUT
+addGroup Slot_A_OUT 12 OUTPUT
+addGroup Slot_B_OUT 12 OUTPUT
+addGroup Motion_OUT 3 OUTPUT
+addGroup Propel_OUT 3 OUTPUT
 addGroup Interaction_OUT 2 OUTPUT
 addGroup Mountain_OUT 25 OUTPUT
 
 # connect groups (input => hidden => output)
-connectGroups {Slot_A Slot_B Motion_IN_1 Motion_IN_2 Mountain_IN Eyes_1 Eyes_2 context} hidden 
-connectGroups hidden {Slot_A_OUT Slot_B_OUT Motion_OUT_1 Motion_OUT_2 Mountain_OUT Eyes_1_OUT Eyes_2_OUT Interaction_OUT} -type hp
-
-
-elmanConnect hidden context
+connectGroups {Slot_A Slot_B Motion_IN Propel_IN Interaction_IN Mountain_IN} hidden {Slot_A_OUT Slot_B_OUT Motion_OUT Propel_OUT Interaction_OUT Mountain_OUT}
 
 
 # training examples: 
-loadExamples pretrain_phase1.ex 
-loadExamples pretrain_phase2.ex 
+loadExamples pretraining_action.ex 
+loadExamples pretraining_interaction.ex 
+loadExamples pretraining_action_2.ex
 loadExamples habituation.ex 
 loadExamples test.ex 
-loadExamples test_no_eyes.ex
+
 
 
 
@@ -56,17 +49,13 @@ setObj weightDecay 0.001
 # the commands below specify how the network will be displayed in Lens
 resetPlot 
 plotRow 5 b 2 n Slot_A_OUT 4 b 2 n Slot_B_OUT 4 
-plotRow 4 b 5 n Eyes_1_OUT 2 b 2 n Eyes_2_OUT 2
-plotRow 2 b 4 n Motion_OUT_1 5
-plotRow 2 b 4 n Motion_OUT_2 5
-plotRow 6 b 4 n Mountain_OUT 5
-plotRow 3 b 5 n Interaction_OUT 2
+plotRow 2 b 4 n Motion_OUT 3 b 2 n Interaction_OUT 2
+plotRow 2 b 4 n Propel_OUT 3
+plotRow 6 b 3 n Mountain_OUT 5
 plotRow 5 b 1 n hidden 4
-plotRow 5 b 3 n context 4
 plotRow 6 b 3 n Mountain_IN 5
-plotRow 2 b 4 n Motion_IN_1 5
-plotRow 2 b 4 n Motion_IN_2 5
-plotRow 3 b 5 n Eyes_1 2 b 2 n Eyes_2 2
+plotRow 2 b 4 n Propel_IN 5
+plotRow 2 b 4 n Motion_IN 3 b 2 n Interaction_IN 2
 plotRow 5 b 2 n Slot_A 4 b 2 n Slot_B 4
 drawUnits
 viewUnits

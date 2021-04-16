@@ -30,7 +30,7 @@ modified_op_full = objects_people_full
 # OBJECTS: replace "objects_pretrain_stim" with "objects_pretrain_stim"
 objects_pretrain_stim = as.data.frame(matrix(NA, nrow=1000, ncol=14))
 for(i in 1:nrow(modified_op_full)){
-  if(modified_op_full[i,1]==1|modified_op_full[i,2]==1|modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1){
+  if(modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1){
     objects_pretrain_stim[i,] = NA
   } else {
     objects_pretrain_stim[i,] = modified_op_full[i,]
@@ -40,9 +40,9 @@ objects_pretrain_stim = na.omit(objects_pretrain_stim)
 names(objects_pretrain_stim) = NULL
 rownames(objects_pretrain_stim) = NULL
 
-# 00001111000000
+# 11000000000000
 
-# PEOPLE: replace "people_pretrain_stim" with "people_pretrain_stim"
+# CONCORDANT_AGENTs: replace "people_pretrain_stim" with "people_pretrain_stim"
 people_pretrain_stim = as.data.frame(matrix(NA, nrow=1000, ncol=14))
 for(i in 1:nrow(modified_op_full)){
   if(modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1){

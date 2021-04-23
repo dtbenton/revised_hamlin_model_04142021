@@ -27,7 +27,6 @@ connectGroups {Slot_A Slot_B Motion_IN Propel_IN Interaction_IN Mountain_IN} hid
 # training examples: 
 loadExamples pretraining_action.ex 
 loadExamples pretraining_interaction.ex 
-loadExamples pretraining_action_2.ex
 loadExamples habituation.ex 
 loadExamples test.ex 
 

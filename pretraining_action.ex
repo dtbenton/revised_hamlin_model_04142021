@@ -1,5 +1,5 @@
 defT:-
-name: ConcordantAgentAction1
+name: ConcordantAgentInteraction1
 I:	
 (Slot_A)                        
  1 0 0 0 0 0 0 0 0 0 0 0
@@ -19,14 +19,14 @@ T:
 (Propel_OUT)      
  1 0 0
 ;
-name: DiscordantAgentAction1
+name: DiscordantAgentInteraction1
 I:	
 (Slot_A)                        
- 0 0 1 0 0 0 0 0 0 0 0 0
+ 1 0 0 0 0 0 0 0 0 0 0 0
 (Slot_B)                        
  0 0 1 1 0 0 0 0 0 0 0 0
 (Motion_IN)      
- 1 0 0
+ 0 1 0
 (Propel_IN)      
  1 0 0
 T:	
@@ -35,7 +35,7 @@ T:
 (Slot_B_OUT)                        
  0 0 1 1 0 0 0 0 0 0 0 0
 (Motion_OUT)      
- 1 0 0
+ 0 1 0
 (Propel_OUT)      
  1 0 0
 ;
@@ -46,20 +46,20 @@ I:
 (Slot_B)                        
  0 0 0 0 1 1 0 0 0 0 0 0
 (Motion_IN)      
- 0 0 1
+ 0 1 0
 (Propel_IN)      
- 0 0 1
+ 0 1 0
 T:	
 (Slot_A_OUT)                        
- 0 0 1 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 1 0 0 0 0 0 0 0
 (Slot_B_OUT)                        
- 0 0 1 1 0 0 0 0 0 0 0 0
+ 0 0 0 0 1 1 0 0 0 0 0 0
 (Motion_OUT)      
- 0 0 1
+ 0 1 0
 (Propel_OUT)      
- 0 0 1
+ 0 1 0
 ;
-name: ConcordantAgentAction2
+name: ConcordantAgentInteraction2
 I:	
 (Slot_A)                        
  0 1 0 0 0 0 0 0 0 0 0 0
@@ -79,14 +79,14 @@ T:
 (Propel_OUT)      
  1 0 0
 ;
-name: DiscordantAgentAction2
+name: DiscordantAgentInteraction2
 I:	
 (Slot_A)                        
- 0 0 0 1 0 0 0 0 0 0 0 0
+ 0 1 0 0 0 0 0 0 0 0 0 0
 (Slot_B)                        
  0 0 1 1 0 0 0 0 0 0 0 0
 (Motion_IN)      
- 1 0 0
+ 0 1 0
 (Propel_IN)      
  1 0 0
 T:	
@@ -95,7 +95,7 @@ T:
 (Slot_B_OUT)                        
  0 0 1 1 0 0 0 0 0 0 0 0
 (Motion_OUT)      
- 1 0 0
+ 0 1 0
 (Propel_OUT)      
  1 0 0
 ;
@@ -106,16 +106,16 @@ I:
 (Slot_B)                        
  0 0 0 0 1 1 0 0 0 0 0 0
 (Motion_IN)      
- 0 0 1
+ 0 1 0
 (Propel_IN)      
- 0 0 1
+ 0 1 0
 T:	
 (Slot_A_OUT)                        
- 0 0 0 1 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 1 0 0 0 0 0 0
 (Slot_B_OUT)                        
- 0 0 1 1 0 0 0 0 0 0 0 0
+ 0 0 0 0 1 1 0 0 0 0 0 0
 (Motion_OUT)      
- 0 0 1
+ 0 1 0
 (Propel_OUT)      
- 0 0 1
+ 0 1 0
 ;

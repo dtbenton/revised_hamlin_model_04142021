@@ -1,0 +1,5 @@
+- The model in this folder presents the network with an equal number of concordant action events and discordant action events.
+- The model also presents the network with an equal number of capacity for interaction events for concordant agents and for discordant agent events
+
+
+- in this script, concordant agents are represented differently (i.e., orthogonally) than discordant agents. Although perceptually these two kinds of agents in the real world are no different, I believe that infnats come to represet them differently given that they participate in different kinds of action (namely, discordant and concordant action)/

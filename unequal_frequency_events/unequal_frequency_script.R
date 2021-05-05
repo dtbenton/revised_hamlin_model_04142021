@@ -173,8 +173,9 @@ rownames(action_vec) = NULL
 #########################
 propel_vec = data.frame(x = c('1 0 0', '0 1 0', '0 0 1'))
 
-# self-propelled motion = c(1,0)
-# caused motion = c(0,1)
+# self-propelled motion = c(1,0,0)
+# caused motion = c(0,1,0)
+# no motion = c(0,0,1)
 
 
 names(propel_vec) = NULL
@@ -266,11 +267,11 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste("T:", "\n", sep="\t"))
     # Person 1
     cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(pretrain_discordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(pretrain_objects_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Person 2
     cat(paste("(Slot_B_OUT)", sep="\t"))
-    print(pretrain_discordant_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(pretrain_objects_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Motion Input
     cat(paste("(Motion_OUT)", sep="\t"))

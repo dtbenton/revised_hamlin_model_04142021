@@ -8,11 +8,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 1 0 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -23,11 +23,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 1 0 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -40,11 +40,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 1 0 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -55,11 +55,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 1 0 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -72,11 +72,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 0 1 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -87,11 +87,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 0 1 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -104,11 +104,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 0 1 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -119,11 +119,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 0 1 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -136,11 +136,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 1 1 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -151,11 +151,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 1 1 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -168,11 +168,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 1 1 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -183,11 +183,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 1 1 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -200,11 +200,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 1 0 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -215,11 +215,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 1 0 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -232,11 +232,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 1 0 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -247,11 +247,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 1 0 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -264,11 +264,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 0 1 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -279,11 +279,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 0 1 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -296,11 +296,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 0 1 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -311,11 +311,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 0 1 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -328,11 +328,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 1 1 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -343,11 +343,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 1 1 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -360,11 +360,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 1 1 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -375,11 +375,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 1 1 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -392,11 +392,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 1 0 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -407,11 +407,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 1 0 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -424,11 +424,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 1 0 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -439,11 +439,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 1 0 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -456,11 +456,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 0 1 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -471,11 +471,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 0 1 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -488,11 +488,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 0 1 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -503,11 +503,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 0 1 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -520,11 +520,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 1 1 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -535,11 +535,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 1 1 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;
@@ -552,11 +552,11 @@ I:
 (Slot_B)                            
  0 0 0 0 0 0 0 0 1 1 0 0 0 0
 (Eyes_2)    
- 1 0
+ 0 1
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
- 1 0 0
+ 0 1 0
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
@@ -567,11 +567,11 @@ T:
 (Slot_B_OUT)                            
  0 0 0 0 0 0 0 0 1 1 0 0 0 0
 (Eyes_2_OUT)    
- 1 0
+ 0 1
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
- 1 0 0
+ 0 1 0
 (Mountain_OUT)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 ;

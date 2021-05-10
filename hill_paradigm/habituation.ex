@@ -1,10 +1,14 @@
 defT:-
 name: HelpingEvents1
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 1 0 0 0
-(Slot_B)                        
- 0 0 0 0 0 0 1 0 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 1 0 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 1 0 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
@@ -12,10 +16,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 1 0 0 0
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 1 0 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 1 0 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 1 0 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
@@ -25,10 +33,14 @@ T:
 ;
 name: HinderingEvents1
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 0 0 1 0
-(Slot_B)                        
- 0 0 0 0 0 0 1 0 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 1 0 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
@@ -36,10 +48,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 0 0 1 0
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 1 0 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 1 0 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
@@ -49,10 +65,14 @@ T:
 ;
 name: HelpingEvents2
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 1 0 0 0
-(Slot_B)                        
- 0 0 0 0 0 0 0 1 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 1 0 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
@@ -60,10 +80,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 1 0 0 0
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 0 1 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 1 0 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
@@ -73,10 +97,14 @@ T:
 ;
 name: HinderingEvents2
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 0 0 1 0
-(Slot_B)                        
- 0 0 0 0 0 0 0 1 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
@@ -84,10 +112,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 0 0 1 0
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 0 1 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
@@ -97,10 +129,14 @@ T:
 ;
 name: HelpingEvents3
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 1 0 0 0
-(Slot_B)                        
- 0 0 0 0 0 0 1 1 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 1 0 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 1 1 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
@@ -108,10 +144,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 1 0 0 0
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 1 1 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 1 0 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 1 1 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
@@ -121,10 +161,14 @@ T:
 ;
 name: HinderingEvents3
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 0 0 1 0
-(Slot_B)                        
- 0 0 0 0 0 0 1 1 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 1 1 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
@@ -132,10 +176,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 0 0 1 0
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 1 1 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 1 1 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
@@ -145,10 +193,14 @@ T:
 ;
 name: HelpingEvents4
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 0 1 0 0
-(Slot_B)                        
- 0 0 0 0 0 0 1 0 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 0 1 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 1 0 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
@@ -156,10 +208,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 0 1 0 0
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 1 0 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 0 1 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 1 0 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
@@ -169,10 +225,14 @@ T:
 ;
 name: HinderingEvents4
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 0 0 0 1
-(Slot_B)                        
- 0 0 0 0 0 0 1 0 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 1 0 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
@@ -180,10 +240,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 0 0 0 1
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 1 0 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 1 0 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
@@ -193,10 +257,14 @@ T:
 ;
 name: HelpingEvents5
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 0 1 0 0
-(Slot_B)                        
- 0 0 0 0 0 0 0 1 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 0 1 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
@@ -204,10 +272,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 0 1 0 0
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 0 1 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 0 1 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
@@ -217,10 +289,14 @@ T:
 ;
 name: HinderingEvents5
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 0 0 0 1
-(Slot_B)                        
- 0 0 0 0 0 0 0 1 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
@@ -228,10 +304,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 0 0 0 1
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 0 1 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
@@ -241,10 +321,14 @@ T:
 ;
 name: HelpingEvents6
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 0 1 0 0
-(Slot_B)                        
- 0 0 0 0 0 0 1 1 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 0 1 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 1 1 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
@@ -252,10 +336,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 0 1 0 0
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 1 1 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 0 1 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 1 1 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
@@ -265,10 +353,14 @@ T:
 ;
 name: HinderingEvents6
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 0 0 0 1
-(Slot_B)                        
- 0 0 0 0 0 0 1 1 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 1 1 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
@@ -276,10 +368,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 0 0 0 1
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 1 1 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 1 1 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
@@ -289,10 +385,14 @@ T:
 ;
 name: HelpingEvents7
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 1 1 0 0
-(Slot_B)                        
- 0 0 0 0 0 0 1 0 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 1 1 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 1 0 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
@@ -300,10 +400,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 1 1 0 0
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 1 0 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 1 1 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 1 0 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
@@ -313,10 +417,14 @@ T:
 ;
 name: HinderingEvents7
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 0 0 1 1
-(Slot_B)                        
- 0 0 0 0 0 0 1 0 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 1 0 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
@@ -324,10 +432,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 0 0 1 1
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 1 0 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 1 0 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
@@ -337,10 +449,14 @@ T:
 ;
 name: HelpingEvents8
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 1 1 0 0
-(Slot_B)                        
- 0 0 0 0 0 0 0 1 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 1 1 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
@@ -348,10 +464,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 1 1 0 0
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 0 1 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 1 1 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
@@ -361,10 +481,14 @@ T:
 ;
 name: HinderingEvents8
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 0 0 1 1
-(Slot_B)                        
- 0 0 0 0 0 0 0 1 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
@@ -372,10 +496,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 0 0 1 1
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 0 1 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      
@@ -385,10 +513,14 @@ T:
 ;
 name: HelpingEvents9
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 1 1 0 0
-(Slot_B)                        
- 0 0 0 0 0 0 1 1 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 1 1 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 1 1 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  1 0 0
 (Propel_IN)      
@@ -396,10 +528,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 1 1 0 0
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 1 1 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 1 1 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 1 1 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  1 0 0
 (Propel_OUT)      
@@ -409,10 +545,14 @@ T:
 ;
 name: HinderingEvents9
 I:	
-(Slot_A)                        
- 0 0 0 0 0 0 0 0 0 0 1 1
-(Slot_B)                        
- 0 0 0 0 0 0 1 1 0 0 0 0
+(Slot_A)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 0 1 1 0 0 0 0
+(Eyes_2)    
+ 1 0
 (Motion_IN)      
  0 1 0
 (Propel_IN)      
@@ -420,10 +560,14 @@ I:
 (Mountain_IN)                                                  
  0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1
 T:	
-(Slot_A_OUT)                        
- 0 0 0 0 0 0 0 0 0 0 1 1
-(Slot_B_OUT)                        
- 0 0 0 0 0 0 1 1 0 0 0 0
+(Slot_A_OUT)                            
+ 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 0 1 1 0 0 0 0
+(Eyes_2_OUT)    
+ 1 0
 (Motion_OUT)      
  0 1 0
 (Propel_OUT)      

@@ -5,8 +5,6 @@ I:
  0 0 0 0 0 0 0 0 0 0 1 0 0 0
 (Eyes_1)    
  1 0
-(Interaction_IN)    
- 1 0
 (Memory_IN)      
  1 0 0
 T:	
@@ -25,8 +23,6 @@ I:
  0 0 0 0 0 0 0 0 0 0 0 0 1 0
 (Eyes_1)    
  1 0
-(Interaction_IN)    
- 0 1
 (Memory_IN)      
  0 1 0
 T:	
@@ -44,8 +40,6 @@ I:
 (Slot_A)                            
  0 0 0 0 0 0 0 0 0 0 1 0 0 0
 (Eyes_1)    
- 1 0
-(Interaction_IN)    
  1 0
 (Memory_IN)      
  1 0 0
@@ -65,8 +59,6 @@ I:
  0 0 0 0 0 0 0 0 0 0 0 0 1 0
 (Eyes_1)    
  1 0
-(Interaction_IN)    
- 0 1
 (Memory_IN)      
  0 1 0
 T:	
@@ -84,8 +76,6 @@ I:
 (Slot_A)                            
  0 0 0 0 0 0 0 0 0 0 1 0 0 0
 (Eyes_1)    
- 1 0
-(Interaction_IN)    
  1 0
 (Memory_IN)      
  1 0 0
@@ -105,8 +95,6 @@ I:
  0 0 0 0 0 0 0 0 0 0 0 0 1 0
 (Eyes_1)    
  1 0
-(Interaction_IN)    
- 0 1
 (Memory_IN)      
  0 1 0
 T:	
@@ -124,8 +112,6 @@ I:
 (Slot_A)                            
  0 0 0 0 0 0 0 0 0 0 0 1 0 0
 (Eyes_1)    
- 1 0
-(Interaction_IN)    
  1 0
 (Memory_IN)      
  1 0 0
@@ -145,8 +131,6 @@ I:
  0 0 0 0 0 0 0 0 0 0 0 0 0 1
 (Eyes_1)    
  1 0
-(Interaction_IN)    
- 0 1
 (Memory_IN)      
  0 1 0
 T:	
@@ -164,8 +148,6 @@ I:
 (Slot_A)                            
  0 0 0 0 0 0 0 0 0 0 0 1 0 0
 (Eyes_1)    
- 1 0
-(Interaction_IN)    
  1 0
 (Memory_IN)      
  1 0 0
@@ -185,8 +167,6 @@ I:
  0 0 0 0 0 0 0 0 0 0 0 0 0 1
 (Eyes_1)    
  1 0
-(Interaction_IN)    
- 0 1
 (Memory_IN)      
  0 1 0
 T:	
@@ -204,8 +184,6 @@ I:
 (Slot_A)                            
  0 0 0 0 0 0 0 0 0 0 0 1 0 0
 (Eyes_1)    
- 1 0
-(Interaction_IN)    
  1 0
 (Memory_IN)      
  1 0 0
@@ -225,8 +203,6 @@ I:
  0 0 0 0 0 0 0 0 0 0 0 0 0 1
 (Eyes_1)    
  1 0
-(Interaction_IN)    
- 0 1
 (Memory_IN)      
  0 1 0
 T:	
@@ -244,8 +220,6 @@ I:
 (Slot_A)                            
  0 0 0 0 0 0 0 0 0 0 1 1 0 0
 (Eyes_1)    
- 1 0
-(Interaction_IN)    
  1 0
 (Memory_IN)      
  1 0 0
@@ -265,8 +239,6 @@ I:
  0 0 0 0 0 0 0 0 0 0 0 0 1 1
 (Eyes_1)    
  1 0
-(Interaction_IN)    
- 0 1
 (Memory_IN)      
  0 1 0
 T:	
@@ -284,8 +256,6 @@ I:
 (Slot_A)                            
  0 0 0 0 0 0 0 0 0 0 1 1 0 0
 (Eyes_1)    
- 1 0
-(Interaction_IN)    
  1 0
 (Memory_IN)      
  1 0 0
@@ -305,8 +275,6 @@ I:
  0 0 0 0 0 0 0 0 0 0 0 0 1 1
 (Eyes_1)    
  1 0
-(Interaction_IN)    
- 0 1
 (Memory_IN)      
  0 1 0
 T:	
@@ -324,8 +292,6 @@ I:
 (Slot_A)                            
  0 0 0 0 0 0 0 0 0 0 1 1 0 0
 (Eyes_1)    
- 1 0
-(Interaction_IN)    
  1 0
 (Memory_IN)      
  1 0 0
@@ -345,8 +311,6 @@ I:
  0 0 0 0 0 0 0 0 0 0 0 0 1 1
 (Eyes_1)    
  1 0
-(Interaction_IN)    
- 0 1
 (Memory_IN)      
  0 1 0
 T:	

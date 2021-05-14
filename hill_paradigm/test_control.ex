@@ -8,7 +8,7 @@ I:
 (Interaction_IN)    
  1 0
 (Memory_IN)      
- 1 0 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 1 0 0 0
@@ -17,7 +17,7 @@ T:
 (Interaction_OUT)    
  1 0
 (Memory_OUT)      
- 1 0 0
+ 0 0 1
 ;
 name: Hinderer1
 I:	
@@ -28,7 +28,7 @@ I:
 (Interaction_IN)    
  0 1
 (Memory_IN)      
- 0 1 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 0 0 1 0
@@ -37,7 +37,7 @@ T:
 (Interaction_OUT)    
  0 1
 (Memory_OUT)      
- 0 1 0
+ 0 0 1
 ;
 name: Helper2
 I:	
@@ -48,7 +48,7 @@ I:
 (Interaction_IN)    
  1 0
 (Memory_IN)      
- 1 0 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 1 0 0 0
@@ -57,7 +57,7 @@ T:
 (Interaction_OUT)    
  1 0
 (Memory_OUT)      
- 1 0 0
+ 0 0 1
 ;
 name: Hinderer2
 I:	
@@ -68,7 +68,7 @@ I:
 (Interaction_IN)    
  0 1
 (Memory_IN)      
- 0 1 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 0 0 1 0
@@ -77,7 +77,7 @@ T:
 (Interaction_OUT)    
  0 1
 (Memory_OUT)      
- 0 1 0
+ 0 0 1
 ;
 name: Helper3
 I:	
@@ -88,7 +88,7 @@ I:
 (Interaction_IN)    
  1 0
 (Memory_IN)      
- 1 0 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 1 0 0 0
@@ -97,7 +97,7 @@ T:
 (Interaction_OUT)    
  1 0
 (Memory_OUT)      
- 1 0 0
+ 0 0 1
 ;
 name: Hinderer3
 I:	
@@ -108,7 +108,7 @@ I:
 (Interaction_IN)    
  0 1
 (Memory_IN)      
- 0 1 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 0 0 1 0
@@ -117,7 +117,7 @@ T:
 (Interaction_OUT)    
  0 1
 (Memory_OUT)      
- 0 1 0
+ 0 0 1
 ;
 name: Helper4
 I:	
@@ -128,7 +128,7 @@ I:
 (Interaction_IN)    
  1 0
 (Memory_IN)      
- 1 0 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 0 1 0 0
@@ -137,7 +137,7 @@ T:
 (Interaction_OUT)    
  1 0
 (Memory_OUT)      
- 1 0 0
+ 0 0 1
 ;
 name: Hinderer4
 I:	
@@ -148,7 +148,7 @@ I:
 (Interaction_IN)    
  0 1
 (Memory_IN)      
- 0 1 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 0 0 0 1
@@ -157,7 +157,7 @@ T:
 (Interaction_OUT)    
  0 1
 (Memory_OUT)      
- 0 1 0
+ 0 0 1
 ;
 name: Helper5
 I:	
@@ -168,7 +168,7 @@ I:
 (Interaction_IN)    
  1 0
 (Memory_IN)      
- 1 0 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 0 1 0 0
@@ -177,7 +177,7 @@ T:
 (Interaction_OUT)    
  1 0
 (Memory_OUT)      
- 1 0 0
+ 0 0 1
 ;
 name: Hinderer5
 I:	
@@ -188,7 +188,7 @@ I:
 (Interaction_IN)    
  0 1
 (Memory_IN)      
- 0 1 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 0 0 0 1
@@ -197,7 +197,7 @@ T:
 (Interaction_OUT)    
  0 1
 (Memory_OUT)      
- 0 1 0
+ 0 0 1
 ;
 name: Helper6
 I:	
@@ -208,7 +208,7 @@ I:
 (Interaction_IN)    
  1 0
 (Memory_IN)      
- 1 0 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 0 1 0 0
@@ -217,7 +217,7 @@ T:
 (Interaction_OUT)    
  1 0
 (Memory_OUT)      
- 1 0 0
+ 0 0 1
 ;
 name: Hinderer6
 I:	
@@ -228,7 +228,7 @@ I:
 (Interaction_IN)    
  0 1
 (Memory_IN)      
- 0 1 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 0 0 0 1
@@ -237,7 +237,7 @@ T:
 (Interaction_OUT)    
  0 1
 (Memory_OUT)      
- 0 1 0
+ 0 0 1
 ;
 name: Helper7
 I:	
@@ -248,7 +248,7 @@ I:
 (Interaction_IN)    
  1 0
 (Memory_IN)      
- 1 0 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 1 1 0 0
@@ -257,7 +257,7 @@ T:
 (Interaction_OUT)    
  1 0
 (Memory_OUT)      
- 1 0 0
+ 0 0 1
 ;
 name: Hinderer7
 I:	
@@ -268,7 +268,7 @@ I:
 (Interaction_IN)    
  0 1
 (Memory_IN)      
- 0 1 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 0 0 1 1
@@ -277,7 +277,7 @@ T:
 (Interaction_OUT)    
  0 1
 (Memory_OUT)      
- 0 1 0
+ 0 0 1
 ;
 name: Helper8
 I:	
@@ -288,7 +288,7 @@ I:
 (Interaction_IN)    
  1 0
 (Memory_IN)      
- 1 0 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 1 1 0 0
@@ -297,7 +297,7 @@ T:
 (Interaction_OUT)    
  1 0
 (Memory_OUT)      
- 1 0 0
+ 0 0 1
 ;
 name: Hinderer8
 I:	
@@ -308,7 +308,7 @@ I:
 (Interaction_IN)    
  0 1
 (Memory_IN)      
- 0 1 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 0 0 1 1
@@ -317,7 +317,7 @@ T:
 (Interaction_OUT)    
  0 1
 (Memory_OUT)      
- 0 1 0
+ 0 0 1
 ;
 name: Helper9
 I:	
@@ -328,7 +328,7 @@ I:
 (Interaction_IN)    
  1 0
 (Memory_IN)      
- 1 0 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 1 1 0 0
@@ -337,7 +337,7 @@ T:
 (Interaction_OUT)    
  1 0
 (Memory_OUT)      
- 1 0 0
+ 0 0 1
 ;
 name: Hinderer9
 I:	
@@ -348,7 +348,7 @@ I:
 (Interaction_IN)    
  0 1
 (Memory_IN)      
- 0 1 0
+ 0 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 0 0 0 0 0 1 1
@@ -357,5 +357,5 @@ T:
 (Interaction_OUT)    
  0 1
 (Memory_OUT)      
- 0 1 0
+ 0 0 1
 ;

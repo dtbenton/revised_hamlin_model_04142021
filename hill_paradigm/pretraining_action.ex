@@ -142,6 +142,90 @@ T:
 name: AgentObjectAction1
 I:	
 (Slot_A)                            
+ 1 1 0 0 0 0 0 0 0 0 0 0 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 1 0 0 0 0 0 0
+(Eyes_2)    
+ 0 1
+(Motion_IN)      
+ 0 0 1
+(Propel_IN)      
+ 0 0 1
+T:	
+(Slot_A_OUT)                            
+ 1 1 0 0 0 0 0 0 0 0 0 0 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 1 0 0 0 0 0 0
+(Eyes_2_OUT)    
+ 0 1
+(Motion_OUT)      
+ 0 0 1
+(Propel_OUT)      
+ 0 0 1
+;
+name: AgentObjectAction1
+I:	
+(Slot_A)                            
+ 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 1 0 0 0 0 0 0 0
+(Eyes_2)    
+ 0 1
+(Motion_IN)      
+ 0 0 1
+(Propel_IN)      
+ 0 0 1
+T:	
+(Slot_A_OUT)                            
+ 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 1 0 0 0 0 0 0 0
+(Eyes_2_OUT)    
+ 0 1
+(Motion_OUT)      
+ 0 0 1
+(Propel_OUT)      
+ 0 0 1
+;
+name: AgentObjectAction1
+I:	
+(Slot_A)                            
+ 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 1 0 1 0 0 0 0 0 0 0
+(Eyes_2)    
+ 0 1
+(Motion_IN)      
+ 0 0 1
+(Propel_IN)      
+ 0 0 1
+T:	
+(Slot_A_OUT)                            
+ 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 1 0 1 0 0 0 0 0 0 0
+(Eyes_2_OUT)    
+ 0 1
+(Motion_OUT)      
+ 0 0 1
+(Propel_OUT)      
+ 0 0 1
+;
+name: AgentObjectAction1
+I:	
+(Slot_A)                            
  0 0 1 1 0 0 0 0 0 0 0 0 0 0
 (Eyes_1)    
  1 0
@@ -160,6 +244,90 @@ T:
  1 0
 (Slot_B_OUT)                            
  0 0 0 0 1 0 0 0 0 0 0 0 0 0
+(Eyes_2_OUT)    
+ 0 1
+(Motion_OUT)      
+ 0 0 1
+(Propel_OUT)      
+ 0 0 1
+;
+name: AgentObjectAction1
+I:	
+(Slot_A)                            
+ 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 0 1 0 0 0 0 0 0
+(Eyes_2)    
+ 0 1
+(Motion_IN)      
+ 0 0 1
+(Propel_IN)      
+ 0 0 1
+T:	
+(Slot_A_OUT)                            
+ 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 0 1 0 0 0 0 0 0
+(Eyes_2_OUT)    
+ 0 1
+(Motion_OUT)      
+ 0 0 1
+(Propel_OUT)      
+ 0 0 1
+;
+name: AgentObjectAction1
+I:	
+(Slot_A)                            
+ 0 0 1 0 0 0 0 0 0 0 0 0 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 1 0 0 0 0 0 0 0
+(Eyes_2)    
+ 0 1
+(Motion_IN)      
+ 0 0 1
+(Propel_IN)      
+ 0 0 1
+T:	
+(Slot_A_OUT)                            
+ 0 0 1 0 0 0 0 0 0 0 0 0 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 1 0 0 0 0 0 0 0
+(Eyes_2_OUT)    
+ 0 1
+(Motion_OUT)      
+ 0 0 1
+(Propel_OUT)      
+ 0 0 1
+;
+name: AgentObjectAction1
+I:	
+(Slot_A)                            
+ 0 0 1 0 0 0 0 0 0 0 0 0 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 1 0 1 0 0 0 0 0 0 0
+(Eyes_2)    
+ 0 1
+(Motion_IN)      
+ 0 0 1
+(Propel_IN)      
+ 0 0 1
+T:	
+(Slot_A_OUT)                            
+ 0 0 1 0 0 0 0 0 0 0 0 0 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 1 0 1 0 0 0 0 0 0 0
 (Eyes_2_OUT)    
  0 1
 (Motion_OUT)      
@@ -310,6 +478,90 @@ T:
 name: AgentObjectAction2
 I:	
 (Slot_A)                            
+ 1 1 0 0 0 0 0 0 0 0 0 0 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 1 1 0 0 0 0 0 0 0 0
+(Eyes_2)    
+ 0 1
+(Motion_IN)      
+ 0 0 1
+(Propel_IN)      
+ 0 0 1
+T:	
+(Slot_A_OUT)                            
+ 1 1 0 0 0 0 0 0 0 0 0 0 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 1 1 0 0 0 0 0 0 0 0
+(Eyes_2_OUT)    
+ 0 1
+(Motion_OUT)      
+ 0 0 1
+(Propel_OUT)      
+ 0 0 1
+;
+name: AgentObjectAction2
+I:	
+(Slot_A)                            
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 1 0 0 0 0 0 0 0
+(Eyes_2)    
+ 0 1
+(Motion_IN)      
+ 0 0 1
+(Propel_IN)      
+ 0 0 1
+T:	
+(Slot_A_OUT)                            
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 1 0 0 0 0 0 0 0
+(Eyes_2_OUT)    
+ 0 1
+(Motion_OUT)      
+ 0 0 1
+(Propel_OUT)      
+ 0 0 1
+;
+name: AgentObjectAction2
+I:	
+(Slot_A)                            
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 1 0 1 0 0 0 0 0 0 0
+(Eyes_2)    
+ 0 1
+(Motion_IN)      
+ 0 0 1
+(Propel_IN)      
+ 0 0 1
+T:	
+(Slot_A_OUT)                            
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 1 0 1 0 0 0 0 0 0 0
+(Eyes_2_OUT)    
+ 0 1
+(Motion_OUT)      
+ 0 0 1
+(Propel_OUT)      
+ 0 0 1
+;
+name: AgentObjectAction2
+I:	
+(Slot_A)                            
  0 0 1 1 0 0 0 0 0 0 0 0 0 0
 (Eyes_1)    
  1 0
@@ -328,6 +580,90 @@ T:
  1 0
 (Slot_B_OUT)                            
  0 0 0 0 0 1 0 0 0 0 0 0 0 0
+(Eyes_2_OUT)    
+ 0 1
+(Motion_OUT)      
+ 0 0 1
+(Propel_OUT)      
+ 0 0 1
+;
+name: AgentObjectAction2
+I:	
+(Slot_A)                            
+ 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 1 1 0 0 0 0 0 0 0 0
+(Eyes_2)    
+ 0 1
+(Motion_IN)      
+ 0 0 1
+(Propel_IN)      
+ 0 0 1
+T:	
+(Slot_A_OUT)                            
+ 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 1 1 0 0 0 0 0 0 0 0
+(Eyes_2_OUT)    
+ 0 1
+(Motion_OUT)      
+ 0 0 1
+(Propel_OUT)      
+ 0 0 1
+;
+name: AgentObjectAction2
+I:	
+(Slot_A)                            
+ 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 0 0 1 0 0 0 0 0 0 0
+(Eyes_2)    
+ 0 1
+(Motion_IN)      
+ 0 0 1
+(Propel_IN)      
+ 0 0 1
+T:	
+(Slot_A_OUT)                            
+ 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 0 0 1 0 0 0 0 0 0 0
+(Eyes_2_OUT)    
+ 0 1
+(Motion_OUT)      
+ 0 0 1
+(Propel_OUT)      
+ 0 0 1
+;
+name: AgentObjectAction2
+I:	
+(Slot_A)                            
+ 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+(Eyes_1)    
+ 1 0
+(Slot_B)                            
+ 0 0 0 0 1 0 1 0 0 0 0 0 0 0
+(Eyes_2)    
+ 0 1
+(Motion_IN)      
+ 0 0 1
+(Propel_IN)      
+ 0 0 1
+T:	
+(Slot_A_OUT)                            
+ 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+(Eyes_1_OUT)    
+ 1 0
+(Slot_B_OUT)                            
+ 0 0 0 0 1 0 1 0 0 0 0 0 0 0
 (Eyes_2_OUT)    
  0 1
 (Motion_OUT)      

@@ -1,7 +1,0 @@
-to do with model:
-
-# add memory unit to helper/hinderer test in "practice_1_old_dont_use"
-	- to do this, do the following:
-		- modify the existing test set to include a memory unit and turn on the 1st unit for both the helper and hinderer events. This is because both of these characters will have helped or hindered an agent (i.e., an object with eyes)
-		- create a new test set that also includes a memory unit, but this time turn on the second unit. This is because both of these characters will have helped or hinderered an object (i.e., something without eyes)
-# you will want to do the above by creating a test_no_eyes

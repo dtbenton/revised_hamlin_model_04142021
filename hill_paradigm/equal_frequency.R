@@ -175,6 +175,23 @@ colnames(eyes_vec) = NULL
 rownames(eyes_vec) = NULL
 
 
+
+
+################
+# memory trace #
+################
+memory_trace_vec = data.frame(x = c('1 0 0', '0 1 0', '0 0 1'))
+
+# agents that previously engaged in concordant action with another agent = c(1,0,0)
+# agents that previously engaged in discordant action with another agent = c(0,1,0)
+# agents that previously engaged in no action with another object = c(0,0,1)
+
+
+names(memory_trace_vec) = NULL
+colnames(memory_trace_vec) = NULL
+rownames(memory_trace_vec) = NULL
+
+
 ##########
 # action #
 ##########
@@ -473,9 +490,161 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat("\n")
     
     
-    
-    
     # AGENT/OBJECT ACTION II
+    cat(paste("name: AgentObjectAction", k, "\n", sep=""))
+    cat(paste("I:", "\n", sep="\t"))
+    
+    # Person 1
+    cat(paste("(Slot_A)", sep="\t"))
+    print(pretrain_concordant_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_1)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Person 2
+    cat(paste("(Slot_B)", sep="\t"))
+    print(pretrain_objects_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_2)", sep="\t"))
+    print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Motion Input
+    cat(paste("(Motion_IN)", sep="\t"))
+    print(action_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Propulsion Input
+    cat(paste("(Propel_IN)", sep="\t"))
+    print(propel_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    
+    cat(paste("T:", "\n", sep="\t"))
+    # Person 1
+    cat(paste("(Slot_A_OUT)", sep="\t"))
+    print(pretrain_concordant_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_1_OUT)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Person 2
+    cat(paste("(Slot_B_OUT)", sep="\t"))
+    print(pretrain_objects_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_2_OUT)", sep="\t"))
+    print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Motion Input
+    cat(paste("(Motion_OUT)", sep="\t"))
+    print(action_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Propulsion Input
+    cat(paste("(Propel_OUT)", sep="\t"))
+    print(propel_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste(";", sep="\t"))
+    cat("\n")
+    
+    
+    
+    
+    # AGENT/OBJECT ACTION III
+    cat(paste("name: AgentObjectAction", k, "\n", sep=""))
+    cat(paste("I:", "\n", sep="\t"))
+    
+    # Person 1
+    cat(paste("(Slot_A)", sep="\t"))
+    print(pretrain_concordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_1)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Person 2
+    cat(paste("(Slot_B)", sep="\t"))
+    print(pretrain_objects_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_2)", sep="\t"))
+    print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Motion Input
+    cat(paste("(Motion_IN)", sep="\t"))
+    print(action_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Propulsion Input
+    cat(paste("(Propel_IN)", sep="\t"))
+    print(propel_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    
+    cat(paste("T:", "\n", sep="\t"))
+    # Person 1
+    cat(paste("(Slot_A_OUT)", sep="\t"))
+    print(pretrain_concordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_1_OUT)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Person 2
+    cat(paste("(Slot_B_OUT)", sep="\t"))
+    print(pretrain_objects_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_2_OUT)", sep="\t"))
+    print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Motion Input
+    cat(paste("(Motion_OUT)", sep="\t"))
+    print(action_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Propulsion Input
+    cat(paste("(Propel_OUT)", sep="\t"))
+    print(propel_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste(";", sep="\t"))
+    cat("\n")
+    
+    
+    
+    
+    # AGENT/OBJECT ACTION IV
+    cat(paste("name: AgentObjectAction", k, "\n", sep=""))
+    cat(paste("I:", "\n", sep="\t"))
+    
+    # Person 1
+    cat(paste("(Slot_A)", sep="\t"))
+    print(pretrain_concordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_1)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Person 2
+    cat(paste("(Slot_B)", sep="\t"))
+    print(pretrain_objects_4[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_2)", sep="\t"))
+    print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Motion Input
+    cat(paste("(Motion_IN)", sep="\t"))
+    print(action_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Propulsion Input
+    cat(paste("(Propel_IN)", sep="\t"))
+    print(propel_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    
+    cat(paste("T:", "\n", sep="\t"))
+    # Person 1
+    cat(paste("(Slot_A_OUT)", sep="\t"))
+    print(pretrain_concordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_1_OUT)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Person 2
+    cat(paste("(Slot_B_OUT)", sep="\t"))
+    print(pretrain_objects_4[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_2_OUT)", sep="\t"))
+    print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Motion Input
+    cat(paste("(Motion_OUT)", sep="\t"))
+    print(action_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Propulsion Input
+    cat(paste("(Propel_OUT)", sep="\t"))
+    print(propel_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste(";", sep="\t"))
+    cat("\n")
+    
+    
+    # AGENT/OBJECT ACTION V
     cat(paste("name: AgentObjectAction", k, "\n", sep=""))
     cat(paste("I:", "\n", sep="\t"))
     
@@ -524,6 +693,157 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste(";", sep="\t"))
     cat("\n")
     
+    
+    # AGENT/OBJECT ACTION VI
+    cat(paste("name: AgentObjectAction", k, "\n", sep=""))
+    cat(paste("I:", "\n", sep="\t"))
+    
+    # Person 1
+    cat(paste("(Slot_A)", sep="\t"))
+    print(pretrain_discordant_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_1)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Person 2
+    cat(paste("(Slot_B)", sep="\t"))
+    print(pretrain_objects_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_2)", sep="\t"))
+    print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Motion Input
+    cat(paste("(Motion_IN)", sep="\t"))
+    print(action_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Propulsion Input
+    cat(paste("(Propel_IN)", sep="\t"))
+    print(propel_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    
+    cat(paste("T:", "\n", sep="\t"))
+    # Person 1
+    cat(paste("(Slot_A_OUT)", sep="\t"))
+    print(pretrain_discordant_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_1_OUT)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Person 2
+    cat(paste("(Slot_B_OUT)", sep="\t"))
+    print(pretrain_objects_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_2_OUT)", sep="\t"))
+    print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Motion Input
+    cat(paste("(Motion_OUT)", sep="\t"))
+    print(action_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Propulsion Input
+    cat(paste("(Propel_OUT)", sep="\t"))
+    print(propel_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste(";", sep="\t"))
+    cat("\n")
+    
+    
+    # AGENT/OBJECT ACTION VII
+    cat(paste("name: AgentObjectAction", k, "\n", sep=""))
+    cat(paste("I:", "\n", sep="\t"))
+    
+    # Person 1
+    cat(paste("(Slot_A)", sep="\t"))
+    print(pretrain_discordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_1)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Person 2
+    cat(paste("(Slot_B)", sep="\t"))
+    print(pretrain_objects_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_2)", sep="\t"))
+    print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Motion Input
+    cat(paste("(Motion_IN)", sep="\t"))
+    print(action_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Propulsion Input
+    cat(paste("(Propel_IN)", sep="\t"))
+    print(propel_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    
+    cat(paste("T:", "\n", sep="\t"))
+    # Person 1
+    cat(paste("(Slot_A_OUT)", sep="\t"))
+    print(pretrain_discordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_1_OUT)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Person 2
+    cat(paste("(Slot_B_OUT)", sep="\t"))
+    print(pretrain_objects_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_2_OUT)", sep="\t"))
+    print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Motion Input
+    cat(paste("(Motion_OUT)", sep="\t"))
+    print(action_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Propulsion Input
+    cat(paste("(Propel_OUT)", sep="\t"))
+    print(propel_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste(";", sep="\t"))
+    cat("\n")
+    
+    
+    # AGENT/OBJECT ACTION VIII
+    cat(paste("name: AgentObjectAction", k, "\n", sep=""))
+    cat(paste("I:", "\n", sep="\t"))
+    
+    # Person 1
+    cat(paste("(Slot_A)", sep="\t"))
+    print(pretrain_discordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_1)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Person 2
+    cat(paste("(Slot_B)", sep="\t"))
+    print(pretrain_objects_4[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_2)", sep="\t"))
+    print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Motion Input
+    cat(paste("(Motion_IN)", sep="\t"))
+    print(action_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Propulsion Input
+    cat(paste("(Propel_IN)", sep="\t"))
+    print(propel_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    
+    cat(paste("T:", "\n", sep="\t"))
+    # Person 1
+    cat(paste("(Slot_A_OUT)", sep="\t"))
+    print(pretrain_discordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_1_OUT)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Person 2
+    cat(paste("(Slot_B_OUT)", sep="\t"))
+    print(pretrain_objects_4[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_2_OUT)", sep="\t"))
+    print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Motion Input
+    cat(paste("(Motion_OUT)", sep="\t"))
+    print(action_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Propulsion Input
+    cat(paste("(Propel_OUT)", sep="\t"))
+    print(propel_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste(";", sep="\t"))
+    cat("\n")
+    
+    
     k = k+1
   }
 }
@@ -537,9 +857,8 @@ sink('pretraining_interaction.ex')
 cat(paste("defT:-", "\n", sep=""))
 k = 1
 for(i in 1:nrow(pretrain_concordant_1)){
-  for(j in 1:nrow(pretrain_concordant_2)){
     # CONCORDANT AGENTS AND CONCORDANT ACTION
-    cat(paste("name: ConcordantAgentInteraction", k, "\n", sep=""))
+    cat(paste("name: ConcordantAgentPastConcordantInteraction", k, "\n", sep=""))
     cat(paste("I:", "\n", sep="\t"))
     
     # Person 1
@@ -547,6 +866,8 @@ for(i in 1:nrow(pretrain_concordant_1)){
     print(pretrain_concordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_1)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Memory_IN)", sep="\t"))
+    print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Interaction Input
     cat(paste("(Interaction_IN)", sep="\t"))
@@ -560,17 +881,88 @@ for(i in 1:nrow(pretrain_concordant_1)){
     print(pretrain_concordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_1_OUT)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Memory_OUT)", sep="\t"))
+    print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Interaction Input
     cat(paste("(Interaction_OUT)", sep="\t"))
     print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste(";", sep="\t"))
     cat("\n")
+    
+    # Concordant agent that formerly engaged in no action with an object I
+    
+    cat(paste("name: ConcordantAgentPastNoActionNoInteraction", k, "\n", sep=""))
+    cat(paste("I:", "\n", sep="\t"))
+    
+    # Person 1
+    cat(paste("(Slot_A)", sep="\t"))
+    print(pretrain_concordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_1)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Memory_IN)", sep="\t"))
+    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Interaction Input
+    cat(paste("(Interaction_IN)", sep="\t"))
+    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    
+    cat(paste("T:", "\n", sep="\t"))
+    # Person 1
+    cat(paste("(Slot_A_OUT)", sep="\t"))
+    print(pretrain_concordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_1_OUT)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Memory_OUT)", sep="\t"))
+    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Interaction Input
+    cat(paste("(Interaction_OUT)", sep="\t"))
+    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste(";", sep="\t"))
+    cat("\n")
+    
+    # Concordant agent that formerly engaged in no action with an object II
+    
+    cat(paste("name: ConcordantAgentPastNoActionInteraction", k, "\n", sep=""))
+    cat(paste("I:", "\n", sep="\t"))
+    
+    # Person 1
+    cat(paste("(Slot_A)", sep="\t"))
+    print(pretrain_concordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_1)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Memory_IN)", sep="\t"))
+    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Interaction Input
+    cat(paste("(Interaction_IN)", sep="\t"))
+    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    
+    cat(paste("T:", "\n", sep="\t"))
+    # Person 1
+    cat(paste("(Slot_A_OUT)", sep="\t"))
+    print(pretrain_concordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Eyes_1_OUT)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Memory_OUT)", sep="\t"))
+    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Interaction Input
+    cat(paste("(Interaction_OUT)", sep="\t"))
+    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste(";", sep="\t"))
+    cat("\n")
+    
     
     
     
     # DISCORDANT AGENTS AND DISCORDANT ACTION
-    cat(paste("name: DiscordantAgentInteraction", k, "\n", sep=""))
+    cat(paste("name: DiscordantAgentPastDiscordantNoInteraction", k, "\n", sep=""))
     cat(paste("I:", "\n", sep="\t"))
     
     # Person 1
@@ -578,6 +970,8 @@ for(i in 1:nrow(pretrain_concordant_1)){
     print(pretrain_discordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_1)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Memory_IN)", sep="\t"))
+    print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Interaction Input
     cat(paste("(Interaction_IN)", sep="\t"))
@@ -591,6 +985,8 @@ for(i in 1:nrow(pretrain_concordant_1)){
     print(pretrain_discordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_1_OUT)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Memory_OUT)", sep="\t"))
+    print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Interaction Input
     cat(paste("(Interaction_OUT)", sep="\t"))
@@ -598,18 +994,18 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste(";", sep="\t"))
     cat("\n")
     
+    # Discordant agent that formerly engaged in no action with an object I
     
-    
-    # OBJECTS AND NO ACTION I
-    cat(paste("name: ObjectAction", k, "\n", sep=""))
+    cat(paste("name: DiscordantAgentPastNoActionNoInteraction", k, "\n", sep=""))
     cat(paste("I:", "\n", sep="\t"))
     
     # Person 1
     cat(paste("(Slot_A)", sep="\t"))
-    print(pretrain_objects_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(pretrain_discordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Memory_IN)", sep="\t"))
+    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Interaction Input
     cat(paste("(Interaction_IN)", sep="\t"))
@@ -620,9 +1016,11 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste("T:", "\n", sep="\t"))
     # Person 1
     cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(pretrain_objects_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(pretrain_discordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Memory_OUT)", sep="\t"))
+    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Interaction Input
     cat(paste("(Interaction_OUT)", sep="\t"))
@@ -630,17 +1028,18 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste(";", sep="\t"))
     cat("\n")
     
+    # Discordant agent that formerly engaged in no action with an object II
     
-    # OBJECTS AND NO ACTION II
-    cat(paste("name: ObjectAction", k, "\n", sep=""))
+    cat(paste("name: DiscordantAgentPastNoActionInteraction", k, "\n", sep=""))
     cat(paste("I:", "\n", sep="\t"))
     
     # Person 1
     cat(paste("(Slot_A)", sep="\t"))
-    print(pretrain_objects_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(pretrain_discordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Memory_IN)", sep="\t"))
+    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Interaction Input
     cat(paste("(Interaction_IN)", sep="\t"))
@@ -651,85 +1050,20 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste("T:", "\n", sep="\t"))
     # Person 1
     cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(pretrain_objects_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(pretrain_discordant_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste("(Memory_OUT)", sep="\t"))
+    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Interaction Input
     cat(paste("(Interaction_OUT)", sep="\t"))
     print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste(";", sep="\t"))
-    cat("\n")
-    
-    
-    
-    
-    
-    # AGENT/OBJECT INTERACTION I
-    cat(paste("name: AgentObjectInteraction", k, "\n", sep=""))
-    cat(paste("I:", "\n", sep="\t"))
-    
-    # Person 1
-    cat(paste("(Slot_A)", sep="\t"))
-    print(pretrain_concordant_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    # Interaction Input
-    cat(paste("(Interaction_IN)", sep="\t"))
-    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    
-    cat(paste("T:", "\n", sep="\t"))
-    # Person 1
-    cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(pretrain_concordant_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Interaction Input
-    cat(paste("(Interaction_OUT)", sep="\t"))
-    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste(";", sep="\t"))
-    cat("\n")
-    
-    
-    
-    # AGENT/OBJECT INTERACTION II
-    cat(paste("name: AgentObjectInteraction", k, "\n", sep=""))
-    cat(paste("I:", "\n", sep="\t"))
-    
-    # Person 1
-    cat(paste("(Slot_A)", sep="\t"))
-    print(pretrain_discordant_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    # Interaction Input
-    cat(paste("(Interaction_IN)", sep="\t"))
-    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    
-    cat(paste("T:", "\n", sep="\t"))
-    # Person 1
-    cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(pretrain_discordant_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Interaction Input
-    cat(paste("(Interaction_OUT)", sep="\t"))
-    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste(";", sep="\t"))
     cat("\n")
     
     k = k+1
   }
-}
 sink()
 
 
@@ -1014,9 +1348,17 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("(Slot_A)", sep="\t"))
     print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     
+    # Eyes
+    cat(paste("(Eyes_1)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
     # Interaction Input
     cat(paste("(Interaction_IN)", sep="\t"))
     print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Memory Input
+    cat(paste("(Memory_IN)", sep="\t"))
+    print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     
     
@@ -1025,9 +1367,18 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("(Slot_A_OUT)", sep="\t"))
     print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     
+    # Eyes
+    cat(paste("(Eyes_1_OUT)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
     # Interaction Input
     cat(paste("(Interaction_OUT)", sep="\t"))
     print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    # Memory Output
+    cat(paste("(Memory_OUT)", sep="\t"))
+    print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste(";", sep="\t"))
     cat("\n")
     
@@ -1041,9 +1392,17 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("(Slot_A)", sep="\t"))
     print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     
+    # Eyes
+    cat(paste("(Eyes_1)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
     # Interaction Input
     cat(paste("(Interaction_IN)", sep="\t"))
     print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Memory Input
+    cat(paste("(Memory_IN)", sep="\t"))
+    print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     
     
@@ -1052,9 +1411,291 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("(Slot_A_OUT)", sep="\t"))
     print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     
+    # Eyes
+    cat(paste("(Eyes_1_OUT)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
     # Interaction Input
     cat(paste("(Interaction_OUT)", sep="\t"))
     print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Memory Output
+    cat(paste("(Memory_OUT)", sep="\t"))
+    print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste(";", sep="\t"))
+    cat("\n")
+    k = k+1
+  }
+}
+sink()
+
+
+sink('test_control.ex')
+cat(paste("defT:-", "\n", sep=""))
+k = 1
+for(i in 1:nrow(helper_stim)){
+  for(j in 1:nrow(helper_stim)){
+    # HELPER ENTITIES
+    cat(paste("name: Helper", k, "\n", sep=""))
+    cat(paste("I:", "\n", sep="\t"))
+    
+    # Person 1
+    cat(paste("(Slot_A)", sep="\t"))
+    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Eyes
+    cat(paste("(Eyes_1)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Interaction Input
+    cat(paste("(Interaction_IN)", sep="\t"))
+    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Memory Input
+    cat(paste("(Memory_IN)", sep="\t"))
+    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    
+    cat(paste("T:", "\n", sep="\t"))
+    # Person 1
+    cat(paste("(Slot_A_OUT)", sep="\t"))
+    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Eyes
+    cat(paste("(Eyes_1_OUT)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Interaction Input
+    cat(paste("(Interaction_OUT)", sep="\t"))
+    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    # Memory Output
+    cat(paste("(Memory_OUT)", sep="\t"))
+    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste(";", sep="\t"))
+    cat("\n")
+    
+    
+    
+    # HINDERER ENTITIES
+    cat(paste("name: Hinderer", k, "\n", sep=""))
+    cat(paste("I:", "\n", sep="\t"))
+    
+    # Person 1
+    cat(paste("(Slot_A)", sep="\t"))
+    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Eyes
+    cat(paste("(Eyes_1)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Interaction Input
+    cat(paste("(Interaction_IN)", sep="\t"))
+    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Memory Input
+    cat(paste("(Memory_IN)", sep="\t"))
+    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    
+    cat(paste("T:", "\n", sep="\t"))
+    # Person 1
+    cat(paste("(Slot_A_OUT)", sep="\t"))
+    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Eyes
+    cat(paste("(Eyes_1_OUT)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Interaction Input
+    cat(paste("(Interaction_OUT)", sep="\t"))
+    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Memory Output
+    cat(paste("(Memory_OUT)", sep="\t"))
+    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste(";", sep="\t"))
+    cat("\n")
+    k = k+1
+  }
+}
+sink()
+
+
+
+
+sink('test_no_input_interaction.ex')
+cat(paste("defT:-", "\n", sep=""))
+k = 1
+for(i in 1:nrow(helper_stim)){
+  for(j in 1:nrow(helper_stim)){
+    # HELPER ENTITIES
+    cat(paste("name: Helper", k, "\n", sep=""))
+    cat(paste("I:", "\n", sep="\t"))
+    
+    # Person 1
+    cat(paste("(Slot_A)", sep="\t"))
+    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Eyes
+    cat(paste("(Eyes_1)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Memory Input
+    cat(paste("(Memory_IN)", sep="\t"))
+    print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    
+    cat(paste("T:", "\n", sep="\t"))
+    # Person 1
+    cat(paste("(Slot_A_OUT)", sep="\t"))
+    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Eyes
+    cat(paste("(Eyes_1_OUT)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Interaction Input
+    cat(paste("(Interaction_OUT)", sep="\t"))
+    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    # Memory Output
+    cat(paste("(Memory_OUT)", sep="\t"))
+    print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste(";", sep="\t"))
+    cat("\n")
+    
+    
+    
+    # HINDERER ENTITIES
+    cat(paste("name: Hinderer", k, "\n", sep=""))
+    cat(paste("I:", "\n", sep="\t"))
+    
+    # Person 1
+    cat(paste("(Slot_A)", sep="\t"))
+    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Eyes
+    cat(paste("(Eyes_1)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+
+    
+    # Memory Input
+    cat(paste("(Memory_IN)", sep="\t"))
+    print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    
+    cat(paste("T:", "\n", sep="\t"))
+    # Person 1
+    cat(paste("(Slot_A_OUT)", sep="\t"))
+    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Eyes
+    cat(paste("(Eyes_1_OUT)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Interaction Input
+    cat(paste("(Interaction_OUT)", sep="\t"))
+    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Memory Output
+    cat(paste("(Memory_OUT)", sep="\t"))
+    print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste(";", sep="\t"))
+    cat("\n")
+    k = k+1
+  }
+}
+sink()
+
+
+sink('test_control_no_input_interaction.ex')
+cat(paste("defT:-", "\n", sep=""))
+k = 1
+for(i in 1:nrow(helper_stim)){
+  for(j in 1:nrow(helper_stim)){
+    # HELPER ENTITIES
+    cat(paste("name: Helper", k, "\n", sep=""))
+    cat(paste("I:", "\n", sep="\t"))
+    
+    # Person 1
+    cat(paste("(Slot_A)", sep="\t"))
+    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Eyes
+    cat(paste("(Eyes_1)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    # Memory Input
+    cat(paste("(Memory_IN)", sep="\t"))
+    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    
+    cat(paste("T:", "\n", sep="\t"))
+    # Person 1
+    cat(paste("(Slot_A_OUT)", sep="\t"))
+    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Eyes
+    cat(paste("(Eyes_1_OUT)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Interaction Input
+    cat(paste("(Interaction_OUT)", sep="\t"))
+    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    # Memory Output
+    cat(paste("(Memory_OUT)", sep="\t"))
+    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    cat(paste(";", sep="\t"))
+    cat("\n")
+    
+    
+    
+    # HINDERER ENTITIES
+    cat(paste("name: Hinderer", k, "\n", sep=""))
+    cat(paste("I:", "\n", sep="\t"))
+    
+    # Person 1
+    cat(paste("(Slot_A)", sep="\t"))
+    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Eyes
+    cat(paste("(Eyes_1)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+
+    
+    # Memory Input
+    cat(paste("(Memory_IN)", sep="\t"))
+    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    
+    
+    cat(paste("T:", "\n", sep="\t"))
+    # Person 1
+    cat(paste("(Slot_A_OUT)", sep="\t"))
+    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Eyes
+    cat(paste("(Eyes_1_OUT)", sep="\t"))
+    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Interaction Input
+    cat(paste("(Interaction_OUT)", sep="\t"))
+    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+    
+    # Memory Output
+    cat(paste("(Memory_OUT)", sep="\t"))
+    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste(";", sep="\t"))
     cat("\n")
     k = k+1

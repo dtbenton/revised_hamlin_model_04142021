@@ -36,9 +36,8 @@ loadExamples pretraining_interaction.ex
 loadExamples habituation.ex 
 loadExamples habituation_no_eyes_no_sp.ex
 loadExamples test.ex 
-loadExamples test_no_input_interaction.ex
 loadExamples test_control.ex 
-loadExamples test_control_no_input_interaction.ex 
+
 
 
 

@@ -1,0 +1,5 @@
+# One idea is to compare the difference in activation of the interaction units between helpers (1 0) and hinderers (0 1) for the experimental and control conditions. This difference between the activation of the interaction units for helpers (1 0) and hinderers (0 1) should be greater in the experimental condition than the control condition
+	- use an independent samples t-test to test this.
+
+
+# Another idea, which is commensurate with the analysis technique used in the preprint, is, within a condition, compare the mean activation of the interaction unit for the helper to the mean activation of the noninteraction unit for the hinderer.

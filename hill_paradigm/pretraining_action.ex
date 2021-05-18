@@ -11,8 +11,8 @@ I:
  1 0
 (Motion_IN)      
  1 0 0
-(Propel_IN)      
- 1 0 0
+(Propel_IN)    
+ 1 0
 T:	
 (Slot_A_OUT)                            
  1 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -24,8 +24,8 @@ T:
  1 0
 (Motion_OUT)      
  1 0 0
-(Propel_OUT)      
- 1 0 0
+(Propel_OUT)    
+ 1 0
 ;
 name: DiscordantAgentAction1
 I:	
@@ -39,8 +39,8 @@ I:
  1 0
 (Motion_IN)      
  0 1 0
-(Propel_IN)      
- 1 0 0
+(Propel_IN)    
+ 1 0
 T:	
 (Slot_A_OUT)                            
  0 0 1 0 0 0 0 0 0 0 0 0 0 0
@@ -52,8 +52,8 @@ T:
  1 0
 (Motion_OUT)      
  0 1 0
-(Propel_OUT)      
- 1 0 0
+(Propel_OUT)    
+ 1 0
 ;
 name: ObjectAction1
 I:	
@@ -67,8 +67,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 1 0 0 0 0 0 0 0 0 0
@@ -80,8 +80,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: ObjectAction1
 I:	
@@ -95,8 +95,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 0 0 1 0 0 0 0 0 0
@@ -108,8 +108,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: AgentObjectAction1
 I:	
@@ -123,8 +123,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  1 1 0 0 0 0 0 0 0 0 0 0 0 0
@@ -136,8 +136,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: AgentObjectAction1
 I:	
@@ -151,8 +151,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  1 1 0 0 0 0 0 0 0 0 0 0 0 0
@@ -164,8 +164,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: AgentObjectAction1
 I:	
@@ -179,8 +179,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  1 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -192,8 +192,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: AgentObjectAction1
 I:	
@@ -207,8 +207,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  1 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -220,8 +220,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: AgentObjectAction1
 I:	
@@ -235,8 +235,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 1 1 0 0 0 0 0 0 0 0 0 0
@@ -248,8 +248,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: AgentObjectAction1
 I:	
@@ -263,8 +263,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 1 1 0 0 0 0 0 0 0 0 0 0
@@ -276,8 +276,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: AgentObjectAction1
 I:	
@@ -291,8 +291,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 1 0 0 0 0 0 0 0 0 0 0 0
@@ -304,8 +304,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: AgentObjectAction1
 I:	
@@ -319,8 +319,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 1 0 0 0 0 0 0 0 0 0 0 0
@@ -332,8 +332,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: ConcordantAgentAction2
 I:	
@@ -347,8 +347,8 @@ I:
  1 0
 (Motion_IN)      
  1 0 0
-(Propel_IN)      
- 1 0 0
+(Propel_IN)    
+ 1 0
 T:	
 (Slot_A_OUT)                            
  0 1 0 0 0 0 0 0 0 0 0 0 0 0
@@ -360,8 +360,8 @@ T:
  1 0
 (Motion_OUT)      
  1 0 0
-(Propel_OUT)      
- 1 0 0
+(Propel_OUT)    
+ 1 0
 ;
 name: DiscordantAgentAction2
 I:	
@@ -375,8 +375,8 @@ I:
  1 0
 (Motion_IN)      
  0 1 0
-(Propel_IN)      
- 1 0 0
+(Propel_IN)    
+ 1 0
 T:	
 (Slot_A_OUT)                            
  0 0 0 1 0 0 0 0 0 0 0 0 0 0
@@ -388,8 +388,8 @@ T:
  1 0
 (Motion_OUT)      
  0 1 0
-(Propel_OUT)      
- 1 0 0
+(Propel_OUT)    
+ 1 0
 ;
 name: ObjectAction2
 I:	
@@ -403,8 +403,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 0 1 0 0 0 0 0 0 0 0
@@ -416,8 +416,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: ObjectAction2
 I:	
@@ -431,8 +431,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 0 1 1 0 0 0 0 0 0 0 0
@@ -444,8 +444,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: AgentObjectAction2
 I:	
@@ -459,8 +459,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  1 1 0 0 0 0 0 0 0 0 0 0 0 0
@@ -472,8 +472,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: AgentObjectAction2
 I:	
@@ -487,8 +487,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  1 1 0 0 0 0 0 0 0 0 0 0 0 0
@@ -500,8 +500,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: AgentObjectAction2
 I:	
@@ -515,8 +515,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  0 1 0 0 0 0 0 0 0 0 0 0 0 0
@@ -528,8 +528,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: AgentObjectAction2
 I:	
@@ -543,8 +543,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  0 1 0 0 0 0 0 0 0 0 0 0 0 0
@@ -556,8 +556,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: AgentObjectAction2
 I:	
@@ -571,8 +571,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 1 1 0 0 0 0 0 0 0 0 0 0
@@ -584,8 +584,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: AgentObjectAction2
 I:	
@@ -599,8 +599,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 1 1 0 0 0 0 0 0 0 0 0 0
@@ -612,8 +612,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: AgentObjectAction2
 I:	
@@ -627,8 +627,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 1 0 0 0 0 0 0 0 0 0 0
@@ -640,8 +640,8 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;
 name: AgentObjectAction2
 I:	
@@ -655,8 +655,8 @@ I:
  0 1
 (Motion_IN)      
  0 0 1
-(Propel_IN)      
- 0 0 1
+(Propel_IN)    
+ 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 1 0 0 0 0 0 0 0 0 0 0
@@ -668,6 +668,6 @@ T:
  0 1
 (Motion_OUT)      
  0 0 1
-(Propel_OUT)      
- 0 0 1
+(Propel_OUT)    
+ 0 1
 ;

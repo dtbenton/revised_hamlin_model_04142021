@@ -7,8 +7,6 @@ I:
  1 0
 (Memory_IN)      
  1 0 0
-(Interaction_IN)    
- 1 0
 T:	
 (Slot_A_OUT)                            
  1 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -27,8 +25,6 @@ I:
  1 0
 (Memory_IN)      
  0 0 1
-(Interaction_IN)    
- 0 1
 T:	
 (Slot_A_OUT)                            
  1 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -47,8 +43,6 @@ I:
  1 0
 (Memory_IN)      
  0 0 1
-(Interaction_IN)    
- 1 0
 T:	
 (Slot_A_OUT)                            
  1 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -67,8 +61,6 @@ I:
  1 0
 (Memory_IN)      
  0 1 0
-(Interaction_IN)    
- 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 1 0 0 0 0 0 0 0 0 0 0 0
@@ -87,8 +79,6 @@ I:
  1 0
 (Memory_IN)      
  0 0 1
-(Interaction_IN)    
- 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 1 0 0 0 0 0 0 0 0 0 0 0
@@ -107,8 +97,6 @@ I:
  1 0
 (Memory_IN)      
  0 0 1
-(Interaction_IN)    
- 1 0
 T:	
 (Slot_A_OUT)                            
  0 0 1 0 0 0 0 0 0 0 0 0 0 0
@@ -127,8 +115,6 @@ I:
  1 0
 (Memory_IN)      
  1 0 0
-(Interaction_IN)    
- 1 0
 T:	
 (Slot_A_OUT)                            
  0 1 0 0 0 0 0 0 0 0 0 0 0 0
@@ -147,8 +133,6 @@ I:
  1 0
 (Memory_IN)      
  0 0 1
-(Interaction_IN)    
- 0 1
 T:	
 (Slot_A_OUT)                            
  0 1 0 0 0 0 0 0 0 0 0 0 0 0
@@ -167,8 +151,6 @@ I:
  1 0
 (Memory_IN)      
  0 0 1
-(Interaction_IN)    
- 1 0
 T:	
 (Slot_A_OUT)                            
  0 1 0 0 0 0 0 0 0 0 0 0 0 0
@@ -187,8 +169,6 @@ I:
  1 0
 (Memory_IN)      
  0 1 0
-(Interaction_IN)    
- 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 1 0 0 0 0 0 0 0 0 0 0
@@ -207,8 +187,6 @@ I:
  1 0
 (Memory_IN)      
  0 0 1
-(Interaction_IN)    
- 0 1
 T:	
 (Slot_A_OUT)                            
  0 0 0 1 0 0 0 0 0 0 0 0 0 0
@@ -227,8 +205,6 @@ I:
  1 0
 (Memory_IN)      
  0 0 1
-(Interaction_IN)    
- 1 0
 T:	
 (Slot_A_OUT)                            
  0 0 0 1 0 0 0 0 0 0 0 0 0 0

@@ -869,10 +869,6 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste("(Memory_IN)", sep="\t"))
     print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
-    cat(paste("(Interaction_IN)", sep="\t"))
-    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
     
     
     cat(paste("T:", "\n", sep="\t"))
@@ -884,7 +880,7 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste("(Memory_OUT)", sep="\t"))
     print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
+    # Interaction Output
     cat(paste("(Interaction_OUT)", sep="\t"))
     print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste(";", sep="\t"))
@@ -903,10 +899,6 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste("(Memory_IN)", sep="\t"))
     print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
-    cat(paste("(Interaction_IN)", sep="\t"))
-    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
     
     
     cat(paste("T:", "\n", sep="\t"))
@@ -918,7 +910,7 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste("(Memory_OUT)", sep="\t"))
     print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
+    # Interaction Output
     cat(paste("(Interaction_OUT)", sep="\t"))
     print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste(";", sep="\t"))
@@ -937,10 +929,6 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste("(Memory_IN)", sep="\t"))
     print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
-    cat(paste("(Interaction_IN)", sep="\t"))
-    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
     
     
     cat(paste("T:", "\n", sep="\t"))
@@ -952,7 +940,7 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste("(Memory_OUT)", sep="\t"))
     print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
+    # Interaction Output
     cat(paste("(Interaction_OUT)", sep="\t"))
     print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste(";", sep="\t"))
@@ -973,10 +961,6 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste("(Memory_IN)", sep="\t"))
     print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
-    cat(paste("(Interaction_IN)", sep="\t"))
-    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
     
     
     cat(paste("T:", "\n", sep="\t"))
@@ -988,7 +972,7 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste("(Memory_OUT)", sep="\t"))
     print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
+    # Interaction Output
     cat(paste("(Interaction_OUT)", sep="\t"))
     print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste(";", sep="\t"))
@@ -1007,10 +991,6 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste("(Memory_IN)", sep="\t"))
     print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
-    cat(paste("(Interaction_IN)", sep="\t"))
-    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
     
     
     cat(paste("T:", "\n", sep="\t"))
@@ -1022,7 +1002,7 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste("(Memory_OUT)", sep="\t"))
     print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
+    # Interaction Output
     cat(paste("(Interaction_OUT)", sep="\t"))
     print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste(";", sep="\t"))
@@ -1040,11 +1020,7 @@ for(i in 1:nrow(pretrain_concordant_1)){
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Memory_IN)", sep="\t"))
     print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Interaction Input
-    cat(paste("(Interaction_IN)", sep="\t"))
-    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
+
     
     
     cat(paste("T:", "\n", sep="\t"))
@@ -1056,7 +1032,7 @@ for(i in 1:nrow(pretrain_concordant_1)){
     cat(paste("(Memory_OUT)", sep="\t"))
     print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
+    # Interaction Output
     cat(paste("(Interaction_OUT)", sep="\t"))
     print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste(";", sep="\t"))
@@ -1328,9 +1304,6 @@ sink()
 
 
 
-
-
-
 ############
 # test set #
 ############
@@ -1352,10 +1325,6 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("(Eyes_1)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
-    cat(paste("(Interaction_IN)", sep="\t"))
-    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
     # Memory Input
     cat(paste("(Memory_IN)", sep="\t"))
     print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
@@ -1371,7 +1340,7 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("(Eyes_1_OUT)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
+    # Interaction Output
     cat(paste("(Interaction_OUT)", sep="\t"))
     print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
@@ -1396,10 +1365,6 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("(Eyes_1)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
-    cat(paste("(Interaction_IN)", sep="\t"))
-    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
     # Memory Input
     cat(paste("(Memory_IN)", sep="\t"))
     print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
@@ -1415,7 +1380,7 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("(Eyes_1_OUT)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
+    # Interaction Output
     cat(paste("(Interaction_OUT)", sep="\t"))
     print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
@@ -1447,10 +1412,6 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("(Eyes_1)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
-    cat(paste("(Interaction_IN)", sep="\t"))
-    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
     # Memory Input
     cat(paste("(Memory_IN)", sep="\t"))
     print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
@@ -1491,10 +1452,6 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("(Eyes_1)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
-    cat(paste("(Interaction_IN)", sep="\t"))
-    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
     # Memory Input
     cat(paste("(Memory_IN)", sep="\t"))
     print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
@@ -1510,186 +1467,7 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("(Eyes_1_OUT)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
-    # Interaction Input
-    cat(paste("(Interaction_OUT)", sep="\t"))
-    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Memory Output
-    cat(paste("(Memory_OUT)", sep="\t"))
-    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste(";", sep="\t"))
-    cat("\n")
-    k = k+1
-  }
-}
-sink()
-
-
-
-
-sink('test_no_input_interaction.ex')
-cat(paste("defT:-", "\n", sep=""))
-k = 1
-for(i in 1:nrow(helper_stim)){
-  for(j in 1:nrow(helper_stim)){
-    # HELPER ENTITIES
-    cat(paste("name: Helper", k, "\n", sep=""))
-    cat(paste("I:", "\n", sep="\t"))
-    
-    # Person 1
-    cat(paste("(Slot_A)", sep="\t"))
-    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Eyes
-    cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Memory Input
-    cat(paste("(Memory_IN)", sep="\t"))
-    print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    
-    cat(paste("T:", "\n", sep="\t"))
-    # Person 1
-    cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Eyes
-    cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Interaction Input
-    cat(paste("(Interaction_OUT)", sep="\t"))
-    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    # Memory Output
-    cat(paste("(Memory_OUT)", sep="\t"))
-    print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste(";", sep="\t"))
-    cat("\n")
-    
-    
-    
-    # HINDERER ENTITIES
-    cat(paste("name: Hinderer", k, "\n", sep=""))
-    cat(paste("I:", "\n", sep="\t"))
-    
-    # Person 1
-    cat(paste("(Slot_A)", sep="\t"))
-    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Eyes
-    cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-
-    
-    # Memory Input
-    cat(paste("(Memory_IN)", sep="\t"))
-    print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    
-    cat(paste("T:", "\n", sep="\t"))
-    # Person 1
-    cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Eyes
-    cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Interaction Input
-    cat(paste("(Interaction_OUT)", sep="\t"))
-    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Memory Output
-    cat(paste("(Memory_OUT)", sep="\t"))
-    print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste(";", sep="\t"))
-    cat("\n")
-    k = k+1
-  }
-}
-sink()
-
-
-sink('test_control_no_input_interaction.ex')
-cat(paste("defT:-", "\n", sep=""))
-k = 1
-for(i in 1:nrow(helper_stim)){
-  for(j in 1:nrow(helper_stim)){
-    # HELPER ENTITIES
-    cat(paste("name: Helper", k, "\n", sep=""))
-    cat(paste("I:", "\n", sep="\t"))
-    
-    # Person 1
-    cat(paste("(Slot_A)", sep="\t"))
-    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Eyes
-    cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    # Memory Input
-    cat(paste("(Memory_IN)", sep="\t"))
-    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    
-    cat(paste("T:", "\n", sep="\t"))
-    # Person 1
-    cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Eyes
-    cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Interaction Input
-    cat(paste("(Interaction_OUT)", sep="\t"))
-    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    # Memory Output
-    cat(paste("(Memory_OUT)", sep="\t"))
-    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste(";", sep="\t"))
-    cat("\n")
-    
-    
-    
-    # HINDERER ENTITIES
-    cat(paste("name: Hinderer", k, "\n", sep=""))
-    cat(paste("I:", "\n", sep="\t"))
-    
-    # Person 1
-    cat(paste("(Slot_A)", sep="\t"))
-    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Eyes
-    cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-
-    
-    # Memory Input
-    cat(paste("(Memory_IN)", sep="\t"))
-    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    
-    cat(paste("T:", "\n", sep="\t"))
-    # Person 1
-    cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Eyes
-    cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Interaction Input
+    # Interaction Output
     cat(paste("(Interaction_OUT)", sep="\t"))
     print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
     

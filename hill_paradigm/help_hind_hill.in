@@ -8,7 +8,6 @@ addGroup Memory_IN 3 INPUT
 addGroup Eyes_1 2 INPUT
 addGroup Eyes_2 2 INPUT
 addGroup Propel_IN 3 INPUT
-addGroup Interaction_IN 2 INPUT
 addGroup Mountain_IN 25 INPUT
 
 
@@ -27,7 +26,7 @@ addGroup Interaction_OUT 2 OUTPUT
 addGroup Mountain_OUT 25 OUTPUT
 
 # connect groups (input => hidden => output)
-connectGroups {Slot_A Slot_B Motion_IN Memory_IN Propel_IN Interaction_IN Eyes_1 Eyes_2 Mountain_IN} hidden {Slot_A_OUT Slot_B_OUT Motion_OUT Memory_OUT Propel_OUT Interaction_OUT Eyes_1_OUT Eyes_2_OUT Mountain_OUT}
+connectGroups {Slot_A Slot_B Motion_IN Memory_IN Propel_IN Eyes_1 Eyes_2 Mountain_IN} hidden {Slot_A_OUT Slot_B_OUT Motion_OUT Memory_OUT Propel_OUT Interaction_OUT Eyes_1_OUT Eyes_2_OUT Mountain_OUT}
 
 
 # training examples: 
@@ -66,7 +65,7 @@ plotRow 5 b 1 n hidden 4
 plotRow 6 b 3 n Mountain_IN 5
 plotRow 2 b 4 n Propel_IN 5
 plotRow 3 b 4 n Memory_IN 3
-plotRow 2 b 4 n Motion_IN 3 b 2 n Interaction_IN 2
+plotRow 2 b 4 n Motion_IN 3 
 plotRow 2 b 4 n Eyes_1 2 b 2 n Eyes_2 2
 plotRow 5 b 2 n Slot_A 4 b 2 n Slot_B 4
 drawUnits

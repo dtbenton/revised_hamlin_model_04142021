@@ -73,49 +73,49 @@ rownames(objects_pretrain_stim) = NULL
 # 00001111000000
 
 # CLIMBER: 
-climber_stim = as.data.frame(matrix(NA, nrow=1000, ncol=14))
+hab_test_object_2 = as.data.frame(matrix(NA, nrow=1000, ncol=14))
 for(i in 1:nrow(modified_op_full)){
   if(modified_op_full[i,1]==1|modified_op_full[i,2]==1|modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1){
-    climber_stim[i,] = NA
+    hab_test_object_2[i,] = NA
   } else {
-    climber_stim[i,] = modified_op_full[i,]
+    hab_test_object_2[i,] = modified_op_full[i,]
   }
 }
 
-climber_stim = na.omit(climber_stim)
-names(climber_stim) = NULL
-rownames(climber_stim) = NULL
+hab_test_object_2 = na.omit(hab_test_object_2)
+names(hab_test_object_2) = NULL
+rownames(hab_test_object_2) = NULL
 #00000000110000
 
 # HElPER: 
-helper_stim = as.data.frame(matrix(NA, nrow=1000, ncol=14))
+hab_test_object_1 = as.data.frame(matrix(NA, nrow=1000, ncol=14))
 for(i in 1:nrow(modified_op_full)){
   if(modified_op_full[i,1]==1|modified_op_full[i,2]==1|modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1){
-    helper_stim[i,] = NA
+    hab_test_object_1[i,] = NA
   } else {
-    helper_stim[i,] = modified_op_full[i,]
+    hab_test_object_1[i,] = modified_op_full[i,]
   }
 }
 
-helper_stim = na.omit(helper_stim)
-names(helper_stim) = NULL
-rownames(helper_stim) = NULL
+hab_test_object_1 = na.omit(hab_test_object_1)
+names(hab_test_object_1) = NULL
+rownames(hab_test_object_1) = NULL
 #00000000001100
 
 
 # HINDERER: 
-hinderer_stim = as.data.frame(matrix(NA, nrow=1000, ncol=14))
+hab_test_object_3 = as.data.frame(matrix(NA, nrow=1000, ncol=14))
 for(i in 1:nrow(modified_op_full)){
   if(modified_op_full[i,1]==1|modified_op_full[i,2]==1|modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1){
-    hinderer_stim[i,] = NA
+    hab_test_object_3[i,] = NA
   } else {
-    hinderer_stim[i,] = modified_op_full[i,]
+    hab_test_object_3[i,] = modified_op_full[i,]
   }
 }
 
-hinderer_stim = na.omit(hinderer_stim)
-names(hinderer_stim) = NULL
-rownames(hinderer_stim) = NULL
+hab_test_object_3 = na.omit(hab_test_object_3)
+names(hab_test_object_3) = NULL
+rownames(hab_test_object_3) = NULL
 #00000000000011
 
 # PRETRAINING SET #
@@ -143,9 +143,9 @@ names(pretrain_objects_4) = NULL
 rownames(pretrain_objects_4) = NULL
 
 # HAB/TESTING SET: OBJECTS
-hab_test_object_1 = helper_stim[1:2,]
-hab_test_object_2 = climber_stim[1:2,]
-hab_test_object_3 = hinderer_stim[1:2,]
+hab_test_object_1 = hab_test_object_1[1:2,]
+hab_test_object_2 = hab_test_object_2[1:2,]
+hab_test_object_3 = hab_test_object_3[1:2,]
 
 
 ###############
@@ -1053,21 +1053,21 @@ sink()
 sink('habituation.ex')
 cat(paste("defT:-", "\n", sep=""))
 k = 1
-for(i in 1:nrow(helper_stim)){
-  for(j in 1:nrow(helper_stim)){
+for(i in 1:nrow(hab_test_object_1)){
+  for(j in 1:nrow(hab_test_object_2)){
     # HELPING EVENTS
     cat(paste("name: HelpingEvents", k, "\n", sep=""))
     cat(paste("I:", "\n", sep="\t"))
     
     # Person 1
     cat(paste("(Slot_A)", sep="\t"))
-    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_1)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Person 2
     cat(paste("(Slot_B)", sep="\t"))
-    print(climber_stim[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_2)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
@@ -1088,13 +1088,13 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("T:", "\n", sep="\t"))
     # Person 1
     cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_1_OUT)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Person 2
     cat(paste("(Slot_B_OUT)", sep="\t"))
-    print(climber_stim[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_2_OUT)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
@@ -1120,13 +1120,13 @@ for(i in 1:nrow(helper_stim)){
     
     # Person 1
     cat(paste("(Slot_A)", sep="\t"))
-    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_1)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Person 2
     cat(paste("(Slot_B)", sep="\t"))
-    print(climber_stim[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_2)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
@@ -1147,13 +1147,13 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("T:", "\n", sep="\t"))
     # Person 1
     cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_1_OUT)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Person 2
     cat(paste("(Slot_B_OUT)", sep="\t"))
-    print(climber_stim[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_2_OUT)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
@@ -1179,21 +1179,21 @@ sink()
 sink('habituation_no_eyes_no_sp.ex')
 cat(paste("defT:-", "\n", sep=""))
 k = 1
-for(i in 1:nrow(helper_stim)){
-  for(j in 1:nrow(helper_stim)){
+for(i in 1:nrow(hab_test_object_1)){
+  for(j in 1:nrow(hab_test_object_1)){
     # HELPING EVENTS
     cat(paste("name: HelpingEvents", k, "\n", sep=""))
     cat(paste("I:", "\n", sep="\t"))
     
     # Person 1
     cat(paste("(Slot_A)", sep="\t"))
-    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_1)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Person 2
     cat(paste("(Slot_B)", sep="\t"))
-    print(climber_stim[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_2)", sep="\t"))
     print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
@@ -1214,13 +1214,13 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("T:", "\n", sep="\t"))
     # Person 1
     cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_1_OUT)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Person 2
     cat(paste("(Slot_B_OUT)", sep="\t"))
-    print(climber_stim[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_2_OUT)", sep="\t"))
     print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
@@ -1246,13 +1246,13 @@ for(i in 1:nrow(helper_stim)){
     
     # Person 1
     cat(paste("(Slot_A)", sep="\t"))
-    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_1)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Person 2
     cat(paste("(Slot_B)", sep="\t"))
-    print(climber_stim[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_2)", sep="\t"))
     print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
@@ -1273,13 +1273,13 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("T:", "\n", sep="\t"))
     # Person 1
     cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_1_OUT)", sep="\t"))
     print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Person 2
     cat(paste("(Slot_B_OUT)", sep="\t"))
-    print(climber_stim[j,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
     cat(paste("(Eyes_2_OUT)", sep="\t"))
     print(eyes_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
     
@@ -1311,15 +1311,14 @@ sink()
 sink('test.ex')
 cat(paste("defT:-", "\n", sep=""))
 k = 1
-for(i in 1:nrow(helper_stim)){
-  for(j in 1:nrow(helper_stim)){
+for(i in 1:nrow(hab_test_object_1)){
     # HELPER ENTITIES
     cat(paste("name: Helper", k, "\n", sep=""))
     cat(paste("I:", "\n", sep="\t"))
     
     # Person 1
     cat(paste("(Slot_A)", sep="\t"))
-    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Eyes
     cat(paste("(Eyes_1)", sep="\t"))
@@ -1334,7 +1333,7 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("T:", "\n", sep="\t"))
     # Person 1
     cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Eyes
     cat(paste("(Eyes_1_OUT)", sep="\t"))
@@ -1359,7 +1358,7 @@ for(i in 1:nrow(helper_stim)){
     
     # Person 1
     cat(paste("(Slot_A)", sep="\t"))
-    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Eyes
     cat(paste("(Eyes_1)", sep="\t"))
@@ -1374,7 +1373,7 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("T:", "\n", sep="\t"))
     # Person 1
     cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Eyes
     cat(paste("(Eyes_1_OUT)", sep="\t"))
@@ -1391,22 +1390,20 @@ for(i in 1:nrow(helper_stim)){
     cat("\n")
     k = k+1
   }
-}
 sink()
 
 
 sink('test_control.ex')
 cat(paste("defT:-", "\n", sep=""))
 k = 1
-for(i in 1:nrow(helper_stim)){
-  for(j in 1:nrow(helper_stim)){
+for(i in 1:nrow(hab_test_object_1)){
     # HELPER ENTITIES
     cat(paste("name: Helper", k, "\n", sep=""))
     cat(paste("I:", "\n", sep="\t"))
     
     # Person 1
     cat(paste("(Slot_A)", sep="\t"))
-    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Eyes
     cat(paste("(Eyes_1)", sep="\t"))
@@ -1421,7 +1418,7 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("T:", "\n", sep="\t"))
     # Person 1
     cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(helper_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Eyes
     cat(paste("(Eyes_1_OUT)", sep="\t"))
@@ -1446,7 +1443,7 @@ for(i in 1:nrow(helper_stim)){
     
     # Person 1
     cat(paste("(Slot_A)", sep="\t"))
-    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Eyes
     cat(paste("(Eyes_1)", sep="\t"))
@@ -1461,7 +1458,7 @@ for(i in 1:nrow(helper_stim)){
     cat(paste("T:", "\n", sep="\t"))
     # Person 1
     cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(hinderer_stim[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+    print(hab_test_object_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
     
     # Eyes
     cat(paste("(Eyes_1_OUT)", sep="\t"))
@@ -1477,6 +1474,5 @@ for(i in 1:nrow(helper_stim)){
     cat(paste(";", sep="\t"))
     cat("\n")
     k = k+1
-  }
 }
 sink()

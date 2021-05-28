@@ -1,1 +1,0 @@
-# Note that the key difference between "test" and "test_control" is that the third bit in the memory vector for "test_control" is turned on to reflect the fact that the helper and hinderers had previously (during habituation) interacted with an inanimate object (i.e., an entity with eyes removed).

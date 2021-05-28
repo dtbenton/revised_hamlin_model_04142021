@@ -1,1 +1,0 @@
-This version of the model, Version 2, removes interaction from the input end for both the pretraining_interaction events as well as for the test events. Instead, the network has to predict whether a particular object or entity has the capacity for interaction at the output end

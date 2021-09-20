@@ -1,9 +1,0 @@
-# Num of pretraining trials (for both action and interaction)
-	- 100 (pretraining_action); 100 (pretraining_interaction)
-	- 50 habituation
-
-
-
-
-# Some notes: 
-	- The reason an interaction vector cannot be included as one of the input groups is because networks will learn strong associations between specific active bits in the input interaction group and the same active bits in the output layer. This is problematic because these strong associations will override the fact that agents that engage with objects are as likely to interact with them as they are not to; in other words, when the activity for each bit in the interaction group should be in the midrange between 0 and 1 (for both bits), if the input contains an interaction group, networks will activate the interaction output bit that is active in the input.

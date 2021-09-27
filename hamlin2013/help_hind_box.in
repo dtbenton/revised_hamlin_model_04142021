@@ -1,23 +1,22 @@
 addNet HamlinBox
 
 # input groups
-addGroup Slot_A 16 INPUT
-addGroup Slot_B 16 INPUT
+addGroup Slot_A 14 INPUT
+addGroup Slot_B 14 INPUT
 addGroup Motion_IN 3 INPUT
 addGroup Memory_IN 3 INPUT
 addGroup Eyes_1 2 INPUT
 addGroup Eyes_2 2 INPUT
 addGroup Propel_IN 2 INPUT
 addGroup Box_IN 25 INPUT
-addGroup Ball_IN 25 INPUT
 
 
 # hidden group
 addGroup hidden 10
 
 # output group 
-addGroup Slot_A_OUT 16 OUTPUT
-addGroup Slot_B_OUT 16 OUTPUT
+addGroup Slot_A_OUT 14 OUTPUT
+addGroup Slot_B_OUT 14 OUTPUT
 addGroup Motion_OUT 3 OUTPUT
 addGroup Memory_OUT 3 OUTPUT
 addGroup Eyes_1_OUT 2 OUTPUT
@@ -25,25 +24,22 @@ addGroup Eyes_2_OUT 2 OUTPUT
 addGroup Propel_OUT 2 OUTPUT
 addGroup Interaction_OUT 2 OUTPUT
 addGroup Box_OUT 25 OUTPUT
-addGroup Ball_OUT 25 OUTPUT
 
 # connect groups (input => hidden => output)
-connectGroups {Slot_A Slot_B Motion_IN Memory_IN Propel_IN Eyes_1 Eyes_2 Box_IN Ball_IN} hidden {Slot_A_OUT Slot_B_OUT Motion_OUT Memory_OUT Propel_OUT Interaction_OUT Eyes_1_OUT Eyes_2_OUT Box_OUT Ball_OUT}
+connectGroups {Slot_A Slot_B Motion_IN Memory_IN Propel_IN Eyes_1 Eyes_2 Box_IN} hidden {Slot_A_OUT Slot_B_OUT Motion_OUT Memory_OUT Propel_OUT Interaction_OUT Eyes_1_OUT Eyes_2_OUT Box_OUT}
 
 
 # training examples: 
 loadExamples pretraining_action.ex 
 loadExamples pretraining_interaction.ex 
 loadExamples habituation.ex 
-loadExamples habituation_third_party_help_condition.ex
-loadExamples habituation_third_party_hind_condition.ex
-loadExamples habituation_third_party_hind__control_condition.ex
 loadExamples habituation_no_eyes_no_sp.ex
-loadExamples test.ex 
-loadExamples test_third_party_help.ex
-loadExamples test_third_party_hind.ex
-loadExamples test_third_party_hind_control.ex
-loadExamples test_control.ex 
+loadExamples testExp1A.ex 
+loadExamples testExp1B.ex
+loadExamples testExp2.ex 
+loadExamples testExp3A.ex
+loadExamples testExp3B.ex   
+ 
 
 
 
@@ -63,18 +59,18 @@ setObj weightDecay 0.001
 
 # the commands below specify how the network will be displayed in Lens
 resetPlot 
-plotRow 6 b 2 n Slot_A_OUT 4 b 2 n Slot_B_OUT 4 
+plotRow 5 b 2 n Slot_A_OUT 4 b 2 n Slot_B_OUT 4 
 plotRow 2 b 4 n Eyes_1_OUT 2 b 2 n Eyes_2_OUT 2
 plotRow 2 b 4 n Motion_OUT 3 b 2 n Interaction_OUT 2
 plotRow 3 b 4 n Memory_OUT 3
 plotRow 2 b 4 n Propel_OUT 2
-plotRow 6 b 3 n Box_OUT 5 b 2 n Ball_OUT 5
+plotRow 6 b 3 n Box_OUT 5
 plotRow 5 b 1 n hidden 4
-plotRow 6 b 3 n Box_IN 5 b 2 n Ball_IN 5
+plotRow 6 b 3 n Box_IN 5
 plotRow 2 b 4 n Propel_IN 2
 plotRow 3 b 4 n Memory_IN 3
 plotRow 2 b 4 n Motion_IN 3 
 plotRow 2 b 4 n Eyes_1 2 b 2 n Eyes_2 2
-plotRow 6 b 2 n Slot_A 4 b 2 n Slot_B 4
+plotRow 5 b 2 n Slot_A 4 b 2 n Slot_B 4
 drawUnits
 viewUnits

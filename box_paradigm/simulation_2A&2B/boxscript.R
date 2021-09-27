@@ -1,5 +1,5 @@
 ##############################################################
-# Hamlin, Wynn, Bloom, and Mahajan (2011) simulation: 'Hill' paradigm #
+# Hamlin, Wynn, and Bloom (2007) simulation: 'Hill' paradigm #
 ##############################################################
 
 # load linear-independent vector/matrix creating function
@@ -24,13 +24,13 @@ library(hier.part)
 #############              
 ## OBJECTS ##
 #############
-objects_people_full = combos(16)$binary
+objects_people_full = combos(14)$binary
 modified_op_full = objects_people_full
 
 # CONCORDANT ACTION AGENTS
-concordant_agent_pretrain_stim = as.data.frame(matrix(NA, nrow=1000, ncol=16))
+concordant_agent_pretrain_stim = as.data.frame(matrix(NA, nrow=1000, ncol=14))
 for(i in 1:nrow(modified_op_full)){
-  if(modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1|modified_op_full[i,15]==1|modified_op_full[i,16]==1){
+  if(modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1){
     concordant_agent_pretrain_stim[i,] = NA
   } else {
     concordant_agent_pretrain_stim[i,] = modified_op_full[i,]
@@ -40,13 +40,13 @@ for(i in 1:nrow(modified_op_full)){
 concordant_agent_pretrain_stim = na.omit(concordant_agent_pretrain_stim)
 names(concordant_agent_pretrain_stim) = NULL
 rownames(concordant_agent_pretrain_stim) = NULL
-#1100000000000000
+#11000000000000
 
 
 # DISCORDANT ACTION AGENTS
-discordant_agent_pretrain_stim = as.data.frame(matrix(NA, nrow=1000, ncol=16))
+discordant_agent_pretrain_stim = as.data.frame(matrix(NA, nrow=1000, ncol=14))
 for(i in 1:nrow(modified_op_full)){
-  if(modified_op_full[i,1]==1|modified_op_full[i,2]==1|modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1|modified_op_full[i,15]==1|modified_op_full[i,16]==1){
+  if(modified_op_full[i,1]==1|modified_op_full[i,2]==1|modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1){
     discordant_agent_pretrain_stim[i,] = NA
   } else {
     discordant_agent_pretrain_stim[i,] = modified_op_full[i,]
@@ -59,9 +59,9 @@ rownames(discordant_agent_pretrain_stim) = NULL
 #0011000000000000
 
 # OBJECTS
-objects_pretrain_stim = as.data.frame(matrix(NA, nrow=1000, ncol=16))
+objects_pretrain_stim = as.data.frame(matrix(NA, nrow=1000, ncol=14))
 for(i in 1:nrow(modified_op_full)){
-  if(modified_op_full[i,1]==1|modified_op_full[i,2]==1|modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1|modified_op_full[i,15]==1|modified_op_full[i,16]==1){
+  if(modified_op_full[i,1]==1|modified_op_full[i,2]==1|modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1){
     objects_pretrain_stim[i,] = NA
   } else {
     objects_pretrain_stim[i,] = modified_op_full[i,]
@@ -70,12 +70,12 @@ for(i in 1:nrow(modified_op_full)){
 objects_pretrain_stim = na.omit(objects_pretrain_stim)
 names(objects_pretrain_stim) = NULL
 rownames(objects_pretrain_stim) = NULL
-# 0000111100000000
+# 00001111000000
 
 # CLIMBER: 
-hab_test_object_2 = as.data.frame(matrix(NA, nrow=1000, ncol=16))
+hab_test_object_2 = as.data.frame(matrix(NA, nrow=1000, ncol=14))
 for(i in 1:nrow(modified_op_full)){
-  if(modified_op_full[i,1]==1|modified_op_full[i,2]==1|modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1|modified_op_full[i,15]==1|modified_op_full[i,16]==1){
+  if(modified_op_full[i,1]==1|modified_op_full[i,2]==1|modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1){
     hab_test_object_2[i,] = NA
   } else {
     hab_test_object_2[i,] = modified_op_full[i,]
@@ -85,12 +85,12 @@ for(i in 1:nrow(modified_op_full)){
 hab_test_object_2 = na.omit(hab_test_object_2)
 names(hab_test_object_2) = NULL
 rownames(hab_test_object_2) = NULL
-#0000000011000000
+#00000000110000
 
 # HElPER: 
-hab_test_object_1 = as.data.frame(matrix(NA, nrow=1000, ncol=16))
+hab_test_object_1 = as.data.frame(matrix(NA, nrow=1000, ncol=14))
 for(i in 1:nrow(modified_op_full)){
-  if(modified_op_full[i,1]==1|modified_op_full[i,2]==1|modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1|modified_op_full[i,15]==1|modified_op_full[i,16]==1){
+  if(modified_op_full[i,1]==1|modified_op_full[i,2]==1|modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1){
     hab_test_object_1[i,] = NA
   } else {
     hab_test_object_1[i,] = modified_op_full[i,]
@@ -100,13 +100,13 @@ for(i in 1:nrow(modified_op_full)){
 hab_test_object_1 = na.omit(hab_test_object_1)
 names(hab_test_object_1) = NULL
 rownames(hab_test_object_1) = NULL
-#000000000011000000
+#00000000001100
 
 
 # HINDERER: 
-hab_test_object_3 = as.data.frame(matrix(NA, nrow=1000, ncol=16))
+hab_test_object_3 = as.data.frame(matrix(NA, nrow=1000, ncol=14))
 for(i in 1:nrow(modified_op_full)){
-  if(modified_op_full[i,1]==1|modified_op_full[i,2]==1|modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1|modified_op_full[i,15]==1|modified_op_full[i,16]==1){
+  if(modified_op_full[i,1]==1|modified_op_full[i,2]==1|modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1){
     hab_test_object_3[i,] = NA
   } else {
     hab_test_object_3[i,] = modified_op_full[i,]
@@ -116,38 +116,7 @@ for(i in 1:nrow(modified_op_full)){
 hab_test_object_3 = na.omit(hab_test_object_3)
 names(hab_test_object_3) = NULL
 rownames(hab_test_object_3) = NULL
-#0000000000001100
-
-# HELPER-THIRD-PARTY: 
-helper_third_party = as.data.frame(matrix(NA, nrow=1000, ncol=16))
-for(i in 1:nrow(modified_op_full)){
-  if(modified_op_full[i,1]==1|modified_op_full[i,2]==1|modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1|modified_op_full[i,16]==1){
-    helper_third_party[i,] = NA
-  } else {
-    helper_third_party[i,] = modified_op_full[i,]
-  }
-}
-
-helper_third_party = na.omit(helper_third_party)
-names(helper_third_party) = NULL
-rownames(helper_third_party) = NULL
-#0000000000000010
-
-
-# HINDERER-THIRD-PARTY: 
-hinderer_third_party = as.data.frame(matrix(NA, nrow=1000, ncol=16))
-for(i in 1:nrow(modified_op_full)){
-  if(modified_op_full[i,1]==1|modified_op_full[i,2]==1|modified_op_full[i,3]==1|modified_op_full[i,4]==1|modified_op_full[i,5]==1|modified_op_full[i,6]==1|modified_op_full[i,7]==1|modified_op_full[i,8]==1|modified_op_full[i,9]==1|modified_op_full[i,10]==1|modified_op_full[i,11]==1|modified_op_full[i,12]==1|modified_op_full[i,13]==1|modified_op_full[i,14]==1|modified_op_full[i,15]==1){
-    hinderer_third_party[i,] = NA
-  } else {
-    hinderer_third_party[i,] = modified_op_full[i,]
-  }
-}
-
-hinderer_third_party = na.omit(hinderer_third_party)
-names(hinderer_third_party) = NULL
-rownames(hinderer_third_party) = NULL
-#0000000000000001
+#00000000000011
 
 # PRETRAINING SET #
 # AGENTS
@@ -174,15 +143,9 @@ names(pretrain_objects_4) = NULL
 rownames(pretrain_objects_4) = NULL
 
 # HAB/TESTING SET: OBJECTS
-hab_test_object_1 = hab_test_object_1[1:2,] # helper
-hab_test_object_2 = hab_test_object_2[1:2,] # climber
-hab_test_object_3 = hab_test_object_3[1:2,] # hinderer
-
-
-# HAB/TESTING SET: THIRD-PARTY ACTIONS
-helper_third_party_1 = helper_third_party[1,] # helper third party
-hinderer_third_party_1 = hinderer_third_party[1,] # hinderer third party
-
+hab_test_object_1 = hab_test_object_1[1:2,]
+hab_test_object_2 = hab_test_object_2[1:2,]
+hab_test_object_3 = hab_test_object_3[1:2,]
 
 
 ###############
@@ -256,24 +219,14 @@ colnames(propel_vec) = NULL
 rownames(propel_vec) = NULL
 
 
-########
-# box: #
-########
+######################################
+# box: replace "box" with "box" #
+######################################
 box = data.frame(x = c('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1'))
 
 names(box) = NULL
 colnames(box) = NULL
 rownames(box) = NULL
-
-
-########
-# ball: #
-########
-ball = data.frame(x = c('0 0 1 0 0 0 1 1 1 0 0 1 1 1 0 0 1 1 1 0 0 0 1 0 0'))
-
-names(ball) = NULL
-colnames(ball) = NULL
-rownames(ball) = NULL
 
 
 ###################
@@ -1350,388 +1303,6 @@ for(i in 1:nrow(hab_test_object_1)){
 sink()
 
 
-sink('habituation_third_party_help_condition.ex')
-cat(paste("defT:-", "\n", sep=""))
-k = 1
-for(i in 1:nrow(helper_third_party)){
-  for(j in 1:nrow(hab_test_object_1)){
-    # HELPING EVENTS
-    cat(paste("name: HelpingEvents", k, "\n", sep=""))
-    cat(paste("I:", "\n", sep="\t"))
-    
-    # Person 1
-    cat(paste("(Slot_A)", sep="\t"))
-    print(helper_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Person 2
-    cat(paste("(Slot_B)", sep="\t"))
-    print(hab_test_object_1[j,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_2)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Motion Input
-    cat(paste("(Motion_IN)", sep="\t"))
-    print(action_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Propulsion Input
-    cat(paste("(Propel_IN)", sep="\t"))
-    print(propel_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Ball
-    cat(paste("(Ball_IN)", sep="\t"))
-    print(ball[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    
-    cat(paste("T:", "\n", sep="\t"))
-    # Person 1
-    cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(helper_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Person 2
-    cat(paste("(Slot_B_OUT)", sep="\t"))
-    print(hab_test_object_1[j,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_2_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Motion Input
-    cat(paste("(Motion_OUT)", sep="\t"))
-    print(action_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Propulsion Input
-    cat(paste("(Propel_OUT)", sep="\t"))
-    print(propel_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Ball
-    cat(paste("(Ball_OUT)", sep="\t"))
-    print(ball[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste(";", sep="\t"))
-    cat("\n")
-    
-    
-    
-    # HINDERING EVENTS
-    cat(paste("name: HinderingEvents", k, "\n", sep=""))
-    cat(paste("I:", "\n", sep="\t"))
-    
-    # Person 1
-    cat(paste("(Slot_A)", sep="\t"))
-    print(hinderer_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Person 2
-    cat(paste("(Slot_B)", sep="\t"))
-    print(hab_test_object_1[j,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_2)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Motion Input
-    cat(paste("(Motion_IN)", sep="\t"))
-    print(action_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Propulsion Input
-    cat(paste("(Propel_IN)", sep="\t"))
-    print(propel_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Ball
-    cat(paste("(Ball_IN)", sep="\t"))
-    print(ball[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    
-    cat(paste("T:", "\n", sep="\t"))
-    # Person 1
-    cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(hinderer_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Person 2
-    cat(paste("(Slot_B_OUT)", sep="\t"))
-    print(hab_test_object_1[j,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_2_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Motion Input
-    cat(paste("(Motion_OUT)", sep="\t"))
-    print(action_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Propulsion Input
-    cat(paste("(Propel_OUT)", sep="\t"))
-    print(propel_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Ball
-    cat(paste("(Ball_OUT)", sep="\t"))
-    print(ball[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste(";", sep="\t"))
-    cat("\n")
-    
-    k = k+1
-  }
-}
-sink()
-
-
-sink('habituation_third_party_hind_condition.ex')
-cat(paste("defT:-", "\n", sep=""))
-k = 1
-for(i in 1:nrow(helper_third_party_1)){
-  for(j in 1:nrow(hab_test_object_1)){
-    # HELPING EVENTS
-    cat(paste("name: HelpingEvents", k, "\n", sep=""))
-    cat(paste("I:", "\n", sep="\t"))
-    
-    # Person 1
-    cat(paste("(Slot_A)", sep="\t"))
-    print(helper_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Person 2
-    cat(paste("(Slot_B)", sep="\t"))
-    print(hab_test_object_3[j,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_2)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Motion Input
-    cat(paste("(Motion_IN)", sep="\t"))
-    print(action_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Propulsion Input
-    cat(paste("(Propel_IN)", sep="\t"))
-    print(propel_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Ball
-    cat(paste("(Ball_IN)", sep="\t"))
-    print(ball[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    
-    cat(paste("T:", "\n", sep="\t"))
-    # Person 1
-    cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(helper_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Person 2
-    cat(paste("(Slot_B_OUT)", sep="\t"))
-    print(hab_test_object_3[j,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_2_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Motion Input
-    cat(paste("(Motion_OUT)", sep="\t"))
-    print(action_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Propulsion Input
-    cat(paste("(Propel_OUT)", sep="\t"))
-    print(propel_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Ball
-    cat(paste("(Ball_OUT)", sep="\t"))
-    print(ball[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste(";", sep="\t"))
-    cat("\n")
-    
-    
-    
-    # HINDERING EVENTS
-    cat(paste("name: HinderingEvents", k, "\n", sep=""))
-    cat(paste("I:", "\n", sep="\t"))
-    
-    # Person 1
-    cat(paste("(Slot_A)", sep="\t"))
-    print(hinderer_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Person 2
-    cat(paste("(Slot_B)", sep="\t"))
-    print(hab_test_object_3[j,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_2)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Motion Input
-    cat(paste("(Motion_IN)", sep="\t"))
-    print(action_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Propulsion Input
-    cat(paste("(Propel_IN)", sep="\t"))
-    print(propel_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Ball
-    cat(paste("(Ball_IN)", sep="\t"))
-    print(ball[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    
-    cat(paste("T:", "\n", sep="\t"))
-    # Person 1
-    cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(hinderer_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Person 2
-    cat(paste("(Slot_B_OUT)", sep="\t"))
-    print(hab_test_object_3[j,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_2_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Motion Input
-    cat(paste("(Motion_OUT)", sep="\t"))
-    print(action_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Propulsion Input
-    cat(paste("(Propel_OUT)", sep="\t"))
-    print(propel_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Ball
-    cat(paste("(Ball_OUT)", sep="\t"))
-    print(ball[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste(";", sep="\t"))
-    cat("\n")
-    
-    k = k+1
-  }
-}
-sink()
-
-
-
-
-
-sink('habituation_third_party_hind__control_condition.ex')
-cat(paste("defT:-", "\n", sep=""))
-k = 1
-for(i in 1:nrow(helper_third_party_1)){
-  for(j in 1:nrow(hab_test_object_1)){
-    # HELPING EVENTS
-    cat(paste("name: HelpingEvents", k, "\n", sep=""))
-    cat(paste("I:", "\n", sep="\t"))
-    
-    # Person 1
-    cat(paste("(Slot_A)", sep="\t"))
-    print(helper_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Person 2
-    cat(paste("(Slot_B)", sep="\t"))
-    print(hab_test_object_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_2)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Motion Input
-    cat(paste("(Motion_IN)", sep="\t"))
-    print(action_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Propulsion Input
-    cat(paste("(Propel_IN)", sep="\t"))
-    print(propel_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Ball
-    cat(paste("(Ball_IN)", sep="\t"))
-    print(ball[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    
-    cat(paste("T:", "\n", sep="\t"))
-    # Person 1
-    cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(helper_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Person 2
-    cat(paste("(Slot_B_OUT)", sep="\t"))
-    print(hab_test_object_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_2_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Motion Input
-    cat(paste("(Motion_OUT)", sep="\t"))
-    print(action_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Propulsion Input
-    cat(paste("(Propel_OUT)", sep="\t"))
-    print(propel_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Ball
-    cat(paste("(Ball_OUT)", sep="\t"))
-    print(ball[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste(";", sep="\t"))
-    cat("\n")
-    
-    
-    
-    # HINDERING EVENTS
-    cat(paste("name: HinderingEvents", k, "\n", sep=""))
-    cat(paste("I:", "\n", sep="\t"))
-    
-    # Person 1
-    cat(paste("(Slot_A)", sep="\t"))
-    print(hinderer_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Person 2
-    cat(paste("(Slot_B)", sep="\t"))
-    print(hab_test_object_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_2)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Motion Input
-    cat(paste("(Motion_IN)", sep="\t"))
-    print(action_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Propulsion Input
-    cat(paste("(Propel_IN)", sep="\t"))
-    print(propel_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Ball
-    cat(paste("(Ball_IN)", sep="\t"))
-    print(ball[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    
-    cat(paste("T:", "\n", sep="\t"))
-    # Person 1
-    cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(hinderer_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Person 2
-    cat(paste("(Slot_B_OUT)", sep="\t"))
-    print(hab_test_object_2[j,], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste("(Eyes_2_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Motion Input
-    cat(paste("(Motion_OUT)", sep="\t"))
-    print(action_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Propulsion Input
-    cat(paste("(Propel_OUT)", sep="\t"))
-    print(propel_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Ball
-    cat(paste("(Ball_OUT)", sep="\t"))
-    print(ball[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste(";", sep="\t"))
-    cat("\n")
-    
-    k = k+1
-  }
-}
-sink()
 
 ############
 # test set #
@@ -1741,98 +1312,13 @@ sink('test.ex')
 cat(paste("defT:-", "\n", sep=""))
 k = 1
 for(i in 1:nrow(hab_test_object_1)){
-    # HELPER ENTITIES
-    cat(paste("name: Helper", k, "\n", sep=""))
-    cat(paste("I:", "\n", sep="\t"))
-    
-    # Person 1
-    cat(paste("(Slot_A)", sep="\t"))
-    print(hab_test_object_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Eyes
-    cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Memory Input
-    cat(paste("(Memory_IN)", sep="\t"))
-    print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    
-    cat(paste("T:", "\n", sep="\t"))
-    # Person 1
-    cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(hab_test_object_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Eyes
-    cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Interaction Output
-    cat(paste("(Interaction_OUT)", sep="\t"))
-    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    # Memory Output
-    cat(paste("(Memory_OUT)", sep="\t"))
-    print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste(";", sep="\t"))
-    cat("\n")
-    
-    
-    
-    # HINDERER ENTITIES
-    cat(paste("name: Hinderer", k, "\n", sep=""))
-    cat(paste("I:", "\n", sep="\t"))
-    
-    # Person 1
-    cat(paste("(Slot_A)", sep="\t"))
-    print(hab_test_object_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Eyes
-    cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Memory Input
-    cat(paste("(Memory_IN)", sep="\t"))
-    print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    
-    cat(paste("T:", "\n", sep="\t"))
-    # Person 1
-    cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(hab_test_object_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Eyes
-    cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Interaction Output
-    cat(paste("(Interaction_OUT)", sep="\t"))
-    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Memory Output
-    cat(paste("(Memory_OUT)", sep="\t"))
-    print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste(";", sep="\t"))
-    cat("\n")
-    k = k+1
-  }
-sink()
-
-
-sink('test_third_party_help.ex')
-cat(paste("defT:-", "\n", sep=""))
-k = 1
-for(i in 1:nrow(helper_third_party_1)){
   # HELPER ENTITIES
   cat(paste("name: Helper", k, "\n", sep=""))
   cat(paste("I:", "\n", sep="\t"))
   
   # Person 1
   cat(paste("(Slot_A)", sep="\t"))
-  print(helper_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+  print(hab_test_object_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
   
   # Eyes
   cat(paste("(Eyes_1)", sep="\t"))
@@ -1847,7 +1333,7 @@ for(i in 1:nrow(helper_third_party_1)){
   cat(paste("T:", "\n", sep="\t"))
   # Person 1
   cat(paste("(Slot_A_OUT)", sep="\t"))
-  print(helper_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+  print(hab_test_object_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
   
   # Eyes
   cat(paste("(Eyes_1_OUT)", sep="\t"))
@@ -1872,7 +1358,7 @@ for(i in 1:nrow(helper_third_party_1)){
   
   # Person 1
   cat(paste("(Slot_A)", sep="\t"))
-  print(hinderer_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+  print(hab_test_object_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
   
   # Eyes
   cat(paste("(Eyes_1)", sep="\t"))
@@ -1887,7 +1373,7 @@ for(i in 1:nrow(helper_third_party_1)){
   cat(paste("T:", "\n", sep="\t"))
   # Person 1
   cat(paste("(Slot_A_OUT)", sep="\t"))
-  print(hinderer_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+  print(hab_test_object_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
   
   # Eyes
   cat(paste("(Eyes_1_OUT)", sep="\t"))
@@ -1905,262 +1391,88 @@ for(i in 1:nrow(helper_third_party_1)){
   k = k+1
 }
 sink()
-
-
-sink('test_third_party_hind.ex')
-cat(paste("defT:-", "\n", sep=""))
-k = 1
-for(i in 1:nrow(helper_third_party_1)){
-  # HELPER ENTITIES
-  cat(paste("name: Helper", k, "\n", sep=""))
-  cat(paste("I:", "\n", sep="\t"))
-  
-  # Person 1
-  cat(paste("(Slot_A)", sep="\t"))
-  print(helper_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Eyes
-  cat(paste("(Eyes_1)", sep="\t"))
-  print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Memory Input
-  cat(paste("(Memory_IN)", sep="\t"))
-  print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  
-  
-  cat(paste("T:", "\n", sep="\t"))
-  # Person 1
-  cat(paste("(Slot_A_OUT)", sep="\t"))
-  print(helper_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Eyes
-  cat(paste("(Eyes_1_OUT)", sep="\t"))
-  print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Interaction Output
-  cat(paste("(Interaction_OUT)", sep="\t"))
-  print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  
-  # Memory Output
-  cat(paste("(Memory_OUT)", sep="\t"))
-  print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  cat(paste(";", sep="\t"))
-  cat("\n")
-  
-  
-  
-  # HINDERER ENTITIES
-  cat(paste("name: Hinderer", k, "\n", sep=""))
-  cat(paste("I:", "\n", sep="\t"))
-  
-  # Person 1
-  cat(paste("(Slot_A)", sep="\t"))
-  print(hinderer_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Eyes
-  cat(paste("(Eyes_1)", sep="\t"))
-  print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Memory Input
-  cat(paste("(Memory_IN)", sep="\t"))
-  print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  
-  
-  cat(paste("T:", "\n", sep="\t"))
-  # Person 1
-  cat(paste("(Slot_A_OUT)", sep="\t"))
-  print(hinderer_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Eyes
-  cat(paste("(Eyes_1_OUT)", sep="\t"))
-  print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Interaction Output
-  cat(paste("(Interaction_OUT)", sep="\t"))
-  print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Memory Output
-  cat(paste("(Memory_OUT)", sep="\t"))
-  print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  cat(paste(";", sep="\t"))
-  cat("\n")
-  k = k+1
-}
-sink()
-
-
-
-
-
-sink('test_third_party_hind_control.ex')
-cat(paste("defT:-", "\n", sep=""))
-k = 1
-for(i in 1:nrow(helper_third_party_1)){
-  # HELPER ENTITIES
-  cat(paste("name: Helper", k, "\n", sep=""))
-  cat(paste("I:", "\n", sep="\t"))
-  
-  # Person 1
-  cat(paste("(Slot_A)", sep="\t"))
-  print(helper_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Eyes
-  cat(paste("(Eyes_1)", sep="\t"))
-  print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Memory Input
-  cat(paste("(Memory_IN)", sep="\t"))
-  print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  
-  
-  cat(paste("T:", "\n", sep="\t"))
-  # Person 1
-  cat(paste("(Slot_A_OUT)", sep="\t"))
-  print(helper_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Eyes
-  cat(paste("(Eyes_1_OUT)", sep="\t"))
-  print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Interaction Output
-  cat(paste("(Interaction_OUT)", sep="\t"))
-  print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  
-  # Memory Output
-  cat(paste("(Memory_OUT)", sep="\t"))
-  print(memory_trace_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  cat(paste(";", sep="\t"))
-  cat("\n")
-  
-  
-  
-  # HINDERER ENTITIES
-  cat(paste("name: Hinderer", k, "\n", sep=""))
-  cat(paste("I:", "\n", sep="\t"))
-  
-  # Person 1
-  cat(paste("(Slot_A)", sep="\t"))
-  print(hinderer_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Eyes
-  cat(paste("(Eyes_1)", sep="\t"))
-  print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Memory Input
-  cat(paste("(Memory_IN)", sep="\t"))
-  print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  
-  
-  cat(paste("T:", "\n", sep="\t"))
-  # Person 1
-  cat(paste("(Slot_A_OUT)", sep="\t"))
-  print(hinderer_third_party_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Eyes
-  cat(paste("(Eyes_1_OUT)", sep="\t"))
-  print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Interaction Output
-  cat(paste("(Interaction_OUT)", sep="\t"))
-  print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  
-  # Memory Output
-  cat(paste("(Memory_OUT)", sep="\t"))
-  print(memory_trace_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-  cat(paste(";", sep="\t"))
-  cat("\n")
-  k = k+1
-}
-sink()
-
 
 
 sink('test_control.ex')
 cat(paste("defT:-", "\n", sep=""))
 k = 1
 for(i in 1:nrow(hab_test_object_1)){
-    # HELPER ENTITIES
-    cat(paste("name: Helper", k, "\n", sep=""))
-    cat(paste("I:", "\n", sep="\t"))
-    
-    # Person 1
-    cat(paste("(Slot_A)", sep="\t"))
-    print(hab_test_object_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Eyes
-    cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Memory Input
-    cat(paste("(Memory_IN)", sep="\t"))
-    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    
-    cat(paste("T:", "\n", sep="\t"))
-    # Person 1
-    cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(hab_test_object_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Eyes
-    cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Interaction Input
-    cat(paste("(Interaction_OUT)", sep="\t"))
-    print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    # Memory Output
-    cat(paste("(Memory_OUT)", sep="\t"))
-    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste(";", sep="\t"))
-    cat("\n")
-    
-    
-    
-    # HINDERER ENTITIES
-    cat(paste("name: Hinderer", k, "\n", sep=""))
-    cat(paste("I:", "\n", sep="\t"))
-    
-    # Person 1
-    cat(paste("(Slot_A)", sep="\t"))
-    print(hab_test_object_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Eyes
-    cat(paste("(Eyes_1)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Memory Input
-    cat(paste("(Memory_IN)", sep="\t"))
-    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    
-    
-    cat(paste("T:", "\n", sep="\t"))
-    # Person 1
-    cat(paste("(Slot_A_OUT)", sep="\t"))
-    print(hab_test_object_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Eyes
-    cat(paste("(Eyes_1_OUT)", sep="\t"))
-    print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Interaction Output
-    cat(paste("(Interaction_OUT)", sep="\t"))
-    print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    
-    # Memory Output
-    cat(paste("(Memory_OUT)", sep="\t"))
-    print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
-    cat(paste(";", sep="\t"))
-    cat("\n")
-    k = k+1
+  # HELPER ENTITIES
+  cat(paste("name: Helper", k, "\n", sep=""))
+  cat(paste("I:", "\n", sep="\t"))
+  
+  # Person 1
+  cat(paste("(Slot_A)", sep="\t"))
+  print(hab_test_object_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+  
+  # Eyes
+  cat(paste("(Eyes_1)", sep="\t"))
+  print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+  
+  # Memory Input
+  cat(paste("(Memory_IN)", sep="\t"))
+  print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+  
+  
+  
+  cat(paste("T:", "\n", sep="\t"))
+  # Person 1
+  cat(paste("(Slot_A_OUT)", sep="\t"))
+  print(hab_test_object_1[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+  
+  # Eyes
+  cat(paste("(Eyes_1_OUT)", sep="\t"))
+  print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+  
+  # Interaction Input
+  cat(paste("(Interaction_OUT)", sep="\t"))
+  print(interaction_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+  
+  
+  # Memory Output
+  cat(paste("(Memory_OUT)", sep="\t"))
+  print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+  cat(paste(";", sep="\t"))
+  cat("\n")
+  
+  
+  
+  # HINDERER ENTITIES
+  cat(paste("name: Hinderer", k, "\n", sep=""))
+  cat(paste("I:", "\n", sep="\t"))
+  
+  # Person 1
+  cat(paste("(Slot_A)", sep="\t"))
+  print(hab_test_object_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+  
+  # Eyes
+  cat(paste("(Eyes_1)", sep="\t"))
+  print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+  
+  # Memory Input
+  cat(paste("(Memory_IN)", sep="\t"))
+  print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+  
+  
+  
+  cat(paste("T:", "\n", sep="\t"))
+  # Person 1
+  cat(paste("(Slot_A_OUT)", sep="\t"))
+  print(hab_test_object_3[i,], sep = "\t", quote = FALSE, row.names = FALSE)
+  
+  # Eyes
+  cat(paste("(Eyes_1_OUT)", sep="\t"))
+  print(eyes_vec[1,1], sep = "\t", quote = FALSE, row.names = FALSE)
+  
+  # Interaction Output
+  cat(paste("(Interaction_OUT)", sep="\t"))
+  print(interaction_vec[2,1], sep = "\t", quote = FALSE, row.names = FALSE)
+  
+  # Memory Output
+  cat(paste("(Memory_OUT)", sep="\t"))
+  print(memory_trace_vec[3,1], sep = "\t", quote = FALSE, row.names = FALSE)
+  cat(paste(";", sep="\t"))
+  cat("\n")
+  k = k+1
 }
 sink()

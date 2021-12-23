@@ -1,0 +1,80 @@
+addNet HamlinBox
+
+# input groups
+addGroup Slot_A 14 INPUT
+addGroup Slot_B 14 INPUT
+addGroup Motion_IN 3 INPUT
+addGroup Memory_IN 3 INPUT
+addGroup Eyes_1 2 INPUT
+addGroup Eyes_2 2 INPUT
+addGroup Propel_IN 2 INPUT
+addGroup Box_IN 25 INPUT
+
+
+# hidden group
+addGroup hidden 10
+
+# output group 
+addGroup Slot_A_OUT 14 OUTPUT
+addGroup Slot_B_OUT 14 OUTPUT
+addGroup Motion_OUT 3 OUTPUT
+addGroup Memory_OUT 3 OUTPUT
+addGroup Eyes_1_OUT 2 OUTPUT
+addGroup Eyes_2_OUT 2 OUTPUT
+addGroup Propel_OUT 2 OUTPUT
+addGroup Interaction_OUT 2 OUTPUT
+addGroup Box_OUT 25 OUTPUT
+addGroup Outcome_OUT 2 OUTPUT
+
+# connect groups (input => hidden => output)
+connectGroups {Slot_A Slot_B Motion_IN Memory_IN Propel_IN Eyes_1 Eyes_2 Box_IN} hidden {Slot_A_OUT Slot_B_OUT Motion_OUT Memory_OUT Propel_OUT Interaction_OUT Eyes_1_OUT Eyes_2_OUT Box_OUT Outcome_OUT}
+
+
+# training examples: 
+loadExamples pretraining_action.ex 
+loadExamples pretraining_interaction.ex 
+loadExamples habituation_exp1A.ex 
+loadExamples habituation_exp1B.ex 
+loadExamples habituation_exp2.ex 
+loadExamples habituation_exp3A.ex 
+loadExamples habituation_exp3B.ex 
+loadExamples testExp1A.ex 
+loadExamples testExp1B.ex
+loadExamples testExp2.ex 
+loadExamples testExp3A.ex
+loadExamples testExp3B.ex   
+ 
+
+
+
+
+
+# set learning and display parameters
+setObj learningRate 0.08
+setObj momentum	    0.9
+setObj batchSize    0
+setObj numUpdates   100
+setObj reportInterval 1
+setObj unitCellSize 9
+setObj linkCellSize 10
+setObj randRange 0.003
+setObj weightDecay 0.001
+
+
+# the commands below specify how the network will be displayed in Lens
+resetPlot 
+plotRow 5 b 2 n Slot_A_OUT 4 b 2 n Slot_B_OUT 4 
+plotRow 2 b 4 n Eyes_1_OUT 2 b 2 n Eyes_2_OUT 2
+plotRow 2 b 4 n Motion_OUT 3 b 2 n Interaction_OUT 2
+plotRow 3 b 4 n Memory_OUT 3
+plotRow 2 b 4 n Propel_OUT 2
+plotRow 6 b 3 n Box_OUT 5 b 2 n Outcome_OUT 2
+plotRow 5 b 1 n hidden 4
+plotRow 6 b 3 n Box_IN 5
+plotRow 2 b 4 n Propel_IN 2
+plotRow 3 b 4 n Memory_IN 3
+plotRow 2 b 4 n Motion_IN 3 
+plotRow 2 b 4 n Eyes_1 2 b 2 n Eyes_2 2
+plotRow 5 b 2 n Slot_A 4 b 2 n Slot_B 4
+drawUnits
+viewUnits

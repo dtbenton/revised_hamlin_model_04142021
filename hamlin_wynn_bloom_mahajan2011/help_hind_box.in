@@ -78,3 +78,37 @@ plotRow 2 b 4 n Eyes_1 2 b 2 n Eyes_2 2
 plotRow 6 b 2 n Slot_A 4 b 2 n Slot_B 4
 drawUnits
 viewUnits
+
+proc printActivation {group unit} { 
+	format "%.3f " [getObj $unit.output] 
+} 
+
+
+proc saveActivations {fname groups} { 
+    set outfile [open $fname a] 
+    puts $outfile "[getObj currentExample.num] [getObj currentExample.name] [getObj currentTick] " nonewline 
+    printUnitValues -$outfile printActivation $groups 
+    puts $outfile "\n" nonewline 
+    close $outfile 
+}
+
+proc testAllFinalActs {fname groups} { 
+    resetExampleSet [getObj testingSet.name] 
+    set nex [getObj testingSet.numExamples] 
+    for {set i 0} {$i < $nex} {incr i} {
+	doExample -set [getObj testingSet.name]
+	saveActivations $fname $groups
+    }
+}
+
+
+proc testNetwork {n train trainNum test fname groups} {
+	for {set i 0} {$i < $n} {incr i} {
+		resetNet
+			useTrainingSet $train
+			train $trainNum
+			useTestingSet $test
+			testAllFinalActs $fname $groups	
+				
+	}
+}
